@@ -1,0 +1,3 @@
+This article is prepared with an extensive log on the author's contribution and the uses of AI. To what extent the authorship needs to be documented to this extent as a standard practice, I am not sure. But for this particular paper, demonstrating a principle is the point. 
+
+I consider this authorship tracking as related to a standard authorship declaration when coauthoring papers. It is not necessarily published along with the article, but is a documentation kept for future reference. Some journals demand a short declaration on division of labor, and the log can be used to construct a similar declaration. In fact: I would use Claude to create such a declaration. 

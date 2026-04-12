@@ -1,0 +1,51 @@
+# === VERSJONSKONTROLL (Git & GitHub) ===
+.git/
+.github/
+.gitignore
+.gitattributes
+
+# === QUARTO & R-PROSJEKTER ===
+.quarto/
+*_files/
+*_cache/
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# === DATA (Beskytt dine datasett) ===
+data/
+temp/
+tmp/
+*.csv
+*.xlsx
+*.parquet
+*.rds
+
+# === SIKKERHET OG NØKLER ===
+.env
+.env.*
+*.pem
+*.key
+*.secret
+auth.json
+
+# === PROGRAMVARE-AVHENGIGHETER ===
+node_modules/
+vendor/
+.venv/
+env/
+__pycache__/
+
+# === UTFILER (Output) ===
+*.html
+*.pdf
+*.docx
+*.epub
+dist/
+build/
+out/
+
+# === SYSTEMFILER ===
+.DS_Store
+Thumbs.db
