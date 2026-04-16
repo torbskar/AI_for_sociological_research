@@ -1,0 +1,6 @@
+# Session summary: 2026-04-15
+## Summarising: 2026-04-13
+
+The April 13 session completed three areas of work. First, the session-start protocol was tested and codified in CLAUDE.md, revealing that the April 12 log had been missed and required reconstruction. Second, the Gemini deep research report on Claude Code infrastructure was reviewed and compared with the current project setup; this produced `notes/gemini-comparison-infrastructure.md`, a new citation-verifier skill, `notes/empirical-data-setup.md`, and `notes/conclusion-requirements.md`. Third, the outline and draft were comprehensively revised to implement the systematic AI authorship framing: the core terminology shift from "structured AI use" was applied throughout, all self-referential passages were removed from the draft prose, and all critical issues identified in the logic-language review were addressed.
+
+The author's principal contributions that session were: insisting on working from the correct draft file (v1-draft - manualEdit.md), directing the removal of self-referential text as an authorial position (the documentation is the proof, not the prose), and specifying the principle-based framing for §4.2 (AI makes extensive search cheap; supplement with standard and semantic searches; not a guide for systematic reviews).

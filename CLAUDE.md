@@ -48,7 +48,9 @@ ai-sociology-paper/
 ├── CLAUDE.md                        ← this file
 ├── logs/
 │   ├── log-index.md                 ← running index of all sessions
-│   └── YYYY-MM-DD.md                ← one log file per date, sections per work stage
+│   ├── YYYY-MM-DD.md                ← one log file per date, sections per work stage
+│   ├── YYYY-MM-DD-author-input.md   ← paired author-input record for each session
+│   └── YYYY-MM-DD-session-summary.md ← session-start summary written at top of next session
 ├── literature/
 │   ├── boolean-searches.md          ← search terms and strategy
 │   ├── notes-ai-in-social-science.md
@@ -64,7 +66,8 @@ ai-sociology-paper/
 │   ├── download_pdfs.R              ← Unpaywall PDF retrieval
 │   └── copy_pdfs_from_zotero.py    ← copy PDFs from Zotero storage
 ├── draft/
-│   ├── v1-draft.md
+│   ├── vN-draft.md                  ← Claude-produced version
+│   ├── vN-draft - manualEdit.md     ← author-edited version (basis for next Claude version)
 │   └── [subsequent versions]
 ├── supplementary/
 │   ├── example-skill-reviewer.md
@@ -83,6 +86,24 @@ When asked to make a note, save it as a `.md` file in `notes/`. Name the file af
 **When drafting begins**, treat `notes/` as a primary source of content alongside the literature notes. Check `notes/` before drafting any section to see if relevant material has already been captured.
 
 **When a note's content has been used** — incorporated into the draft, implemented as a skill, encoded in a script, added to a template, or otherwise acted on — move the file to `notes/used/`. Files in `notes/used/` are archived and should not be drawn on again unless explicitly requested. Do not delete them.
+
+---
+
+## Draft versioning procedure
+
+Draft files follow a two-suffix naming convention that distinguishes author-edited versions from Claude-produced versions:
+
+- `vN-draft.md` — produced by Claude (either initial draft or work continuing from a manualEdit file)
+- `vN-draft - manualEdit.md` — saved by the author after making direct edits to a Claude draft
+
+**Before making any structural or substantive changes to the draft**, check `draft/` for the most recent file:
+
+1. If the most recent file is a `manualEdit` version (e.g. `v1-draft - manualEdit.md`): create a new copy with the next version number as `vN-draft.md` (e.g. `v2-draft.md`) and work on that copy. Do not edit the `manualEdit` file.
+2. If the most recent file is a Claude version (e.g. `v2-draft.md`): continue editing it in place. Do not increment the version number unless the author explicitly requests it.
+
+**Version number increments** only on two occasions: when the author asks for a new version, or when Claude is working from a `manualEdit` file (which signals that the author has made changes since the last Claude version).
+
+The `manualEdit` suffix is the author's signal; Claude never creates `manualEdit` files.
 
 ---
 
@@ -117,12 +138,17 @@ Each date has one log file and one author-input file. If a session produces mult
 ### Decisions
 [Decision]: [outcome]. [Consequential reasoning only if non-obvious.]
 
+### Superseded decisions
+- [YYYY-MM-DD log, brief description of original decision] — superseded by: [new decision, documented above]
+
 ### Open questions
 - [question] — carried from [date] if applicable
 
 ### Closed questions
 - [question] — resolved: [outcome]
 ```
+
+`### Superseded decisions` is optional — only include it when a prior decision from an earlier log is being reversed or significantly modified. The new decision goes in `### Decisions` as normal; this section just adds a backward pointer so the audit trail is continuous. For approaches that are fully abandoned rather than replaced, use `dismissed_ideas/` instead.
 
 ### Author-input file
 
@@ -141,6 +167,19 @@ Every session log must be accompanied by a paired `YYYY-MM-DD-author-input.md` f
 - Routine confirmations and procedural exchanges
 
 **Format:** Continuous prose, first person. Not a list. The tone is that of a research memo to oneself — precise but not formal.
+
+### Session-start protocol
+
+At the start of each new session (i.e. when today's date differs from the most recent log entry), do the following before any other work:
+
+1. Read `logs/log-index.md` to identify the most recent log date.
+2. Check whether log files exist for every date between the most recent log and today. If any dates are missing, check whether project files were modified on those dates (e.g. notes created, CLAUDE.md edited, scripts changed). If so, reconstruct the missing log and author-input files from available evidence before proceeding.
+3. Read the most recent log file and author-input file.
+4. Write a brief summary of the previous session as `logs/YYYY-MM-DD-session-summary.md` (where the date is today's date). The summary should cover: what was worked on, what decisions were made, and what the author contributed or initiated. Keep it to a short paragraph — this is a transition record, not a full recap.
+5. Set up a background log-check cron job: every 2 hours at :17, check whether a log file exists for today and create one if substantive work has occurred in the conversation. This job is session-only and must be recreated each session.
+6. After completing steps 1–5, ask: "The previous session has been summarised in `logs/YYYY-MM-DD-session-summary.md`. Would you like to run `/clear` to start with a clean context? All state is stored in project files."
+
+**Rationale:** The project is designed so that all needed state lives on disc. Starting each session by summarising the prior one and then clearing context keeps the working memory lean, prevents context drift, and ensures the author-input logs form a continuous record across sessions. The missing-log check catches sessions that closed before a log was written. The cron job catches long sessions where logging is forgotten mid-conversation.
 
 ### Log index format
 

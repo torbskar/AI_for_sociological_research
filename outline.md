@@ -1,14 +1,14 @@
-# Outline: Structured AI Use in Sociological Research
+# Outline: Systematic AI Authorship in Sociological Research
 
-**Status**: Working outline — not yet drafted  
-**Last updated**: 2026-04-10  
+**Status**: Working outline — updated 2026-04-16  
+**Last updated**: 2026-04-16  
 **Target**: Sociological Science — methodological contribution
 
 ---
 
 ## Core argument (one sentence)
 
-The epistemically relevant distinction is not between AI use and non-use but between *structured* and *unstructured* use, and a documentation-based framework that recognises this distinction is both more honest and more productive than current journal policy.
+The epistemically relevant distinction is not between AI use and non-use but between *systematic* and *unsystematic* AI authorship, and a documentation-based framework that recognises this distinction is more epistemically honest and more consistent with existing open-science infrastructure than current journal policy.
 
 ---
 
@@ -24,11 +24,11 @@ The argument must be tool-agnostic throughout. The structured/unstructured disti
 
 - The adoption of LLMs in academic research is rapid and uneven. Sociologists are using these tools; the question is not whether but how.
 - Two responses have dominated: blanket restriction (many journals) and blanket permission with disclosure (publishers). Both treat AI use as a binary.
-- The binary is wrong. What matters epistemically is not whether AI was used but whether its use was structured — embedded in explicit criteria, human verification at each stage, documented outputs.
-- This paper: (1) develops the structured/unstructured distinction conceptually; (2) introduces the concept of *query authorship* — the intellectual contribution embedded in well-formed queries and tool configurations; (3) demonstrates a structured workflow for sociology across the full research pipeline; (4) argues that structured use has the epistemic properties of open-science practices; (5) draws implications for journal policy.
+- The binary misidentifies the epistemically relevant dimension. What matters is not whether AI was used but whether it was used *systematically* — embedded in explicit criteria, human verification at each stage, documented outputs. This constitutes a form of authorship contribution in its own right.
+- This paper: (1) develops the distinction between systematic and unsystematic AI authorship; (2) introduces the concept of *query authorship* — the intellectual contribution embedded in well-formed queries, configurations, and workflow design; (3) describes a systematic workflow for sociology across the full research pipeline; (4) argues that systematic AI authorship instantiates the epistemic properties of open-science practices; (5) draws implications for journal policy.
 - Frame: methodological contribution. The paper demonstrates something and argues for its properties — it is not a think-piece.
 
-**Scope limitation** (stated here, not batched): The workflow demonstrated is for text-heavy, literature-based, and qualitative/mixed social science research. Quantitative primary data collection stages are not addressed in detail. The argument is scoped to sociology and adjacent social sciences.
+**Scope limitation** (stated here, not batched): The workflow described is for text-heavy, literature-based, and qualitative/mixed social science research. Systematic reviews have their own established guidance; what is described here is appropriate for standard journal articles. Quantitative primary data collection and GDPR considerations require additional safeguards addressed in the supplementary materials. The argument is scoped to sociology and adjacent social sciences.
 
 ---
 
@@ -36,7 +36,7 @@ The argument must be tool-agnostic throughout. The structured/unstructured disti
 
 **Function**: Brief literature grounding — not a survey. Maps what exists, names the gap, and positions the paper's contribution. Keep short; Sociological Science discourages long literature reviews.
 
-**Methodological note for the outline**: This section's literature was identified using the structured pipeline described in §4 — OpenAlex API search across seven boolean strings, keyword-based abstract screening, full-text relevance scoring, and NotebookLM-assisted theme synthesis. The executed search strings, screening decisions, and full-text scores are documented in the replication package (`boolean-searches.md`, `filter_decisions.json`, `fulltext_scores.csv`). This means the literature review is itself an instance of the practice the paper defends: structured, documented, reproducible. That double function — substantive and demonstrative — should be made explicit in a brief methodological note at the end of this section or at the start of §4.
+**Note**: The literature in this section was identified using the systematic pipeline described in §4. The search strings, screening decisions, and relevance scores are documented in the supplementary materials. No self-referential commentary on this in the text — the documentation itself serves as the demonstration.
 
 ### 2.1 What the existing literature covers
 
@@ -56,9 +56,9 @@ The argument must be tool-agnostic throughout. The structured/unstructured disti
 
 ---
 
-## 3. The structured/unstructured distinction
+## 3. Systematic and unsystematic AI authorship
 
-**Function**: The paper's conceptual contribution. Must be crisp — not a literature review.
+**Function**: The paper's conceptual contribution. Must be crisp — not a literature review. Primary terms: *systematic AI authorship* (the overarching concept) and *unsystematic AI authorship* (the contrast). "Structured/unstructured" survives as a description of practice but is not the primary frame.
 
 ### 3.1 What unstructured AI use looks like
 
@@ -86,35 +86,52 @@ The argument must be tool-agnostic throughout. The structured/unstructured disti
 
 ---
 
-## 4. A structured workflow for sociology
+## 4. A systematic workflow for sociology
 
-**Function**: The demonstration. Shows what structured use looks like in practice across the full research pipeline. Descriptive — this is how it works, not why it is better (that comes in section 4).
+**Function**: Shows what systematic AI authorship looks like in practice across the research pipeline. Descriptive — this is how it works, not why it is better (that comes in §5). Frame as a general workflow, not as a description of what this paper did. Details go to supplementary materials; text stays at the level of principle. No self-referential commentary.
 
 ### 4.1 Overview of the workflow
 
-- Seven stages: literature search → candidate screening → full-text screening → source organisation → drafting → review → documentation
+- Eight stages: literature search → candidate screening → full-text screening → source organisation and synthesis → empirical data and analysis → drafting → review → documentation
 - At each stage: explicit input criteria, configured AI tool, human verification checkpoint, documented output
-- Transparency artefacts produced at each stage: boolean search strings, screening rubrics, skill configurations, prompt templates, search logs, NotebookLM source sets, review records
+- Transparency artefacts produced at each stage: boolean search strings, screening rubrics, skill configurations, prompt templates, search logs, NotebookLM source sets, analysis scripts, codebooks, review records
 - [Scope note here, briefly]: This is not an automated pipeline that delegates decisions to agents. Xu & Yang (2026) demonstrate that type — effective for scaling well-defined computational tasks. The workflow here keeps the researcher in the loop at every stage; AI handles execution within explicitly defined criteria, the researcher handles judgement. The distinction matters for sociology, where research questions, theoretical framings, and interpretive moves cannot be delegated.
 
 ### 4.2 Literature search and screening
 
-**Double function**: This subsection describes the search process that produced the literature reviewed in §2. The section heading and content are descriptive (this is what was done); §2 carries the substantive findings. Making this connection explicit is itself part of the argument: the literature review was conducted via the documented pipeline, making it reproducible and auditable in exactly the way the paper advocates.
+**Function**: Describe the principle of systematic literature searching using AI tools. Frame as a general workflow applicable to standard journal articles — not a systematic review, not self-referential description of this paper's own search. Scope note: systematic reviews have their own established protocols (PRISMA etc.) and this section does not replace them. Details go to supplementary materials.
 
-- Boolean search strategy with explicit inclusion/exclusion criteria documented in advance (analogous to systematic review protocol) — seven search strings across OpenAlex, supplemented by Elicit.com targeted searches
-- OpenAlex API search via R script — reproducible, logged, shareable. OpenAlex chosen over licensed databases (Scopus, Web of Science) partly on legal grounds: database terms for bulk export vary by institutional agreement and may not cover computational analysis, while OpenAlex's open API has explicit research-use permission. [Brief point — signals awareness; legal detail not needed in the paper itself]
-- Candidate screening via configured keyword-based screening rubric (explicit criteria, not impressionistic relevance judgement)
-- Full-text relevance scoring across three themes — algorithmic, auditable
-- Source synthesis via NotebookLM: top-scored PDFs uploaded to themed notebooks; queries documented and responses grounded in uploaded sources — contrast with asking a general-purpose chatbot (unverifiable, no source accountability)
-- Outputs (all in replication package): `automated_literature_searches/boolean-searches.md`, `search_openalex.R`, `screen_candidates.py`, `automated_literature_searches/fulltext_scores.csv`, NotebookLM query logs
+**Key principle**: AI makes extensive search and screening of large literature cheap in terms of time (though it costs tokens). This should be presented as one component of a search strategy, supplemented by standard database searches and semantic searches (e.g. Elicit). The researcher's intellectual contribution is in specifying the search criteria, inclusion/exclusion logic, and synthesis questions — the execution is delegated.
 
-### 4.3 Drafting
+- Boolean search strategy with explicit inclusion/exclusion criteria documented in advance — analogous to a systematic review protocol but applied at the scale of a standard article literature review
+- Open database API (e.g. OpenAlex) searched via script — reproducible, logged, shareable. Licensing note: bulk export from subscription databases (Scopus, Web of Science) may not be permitted under institutional agreements; open APIs with explicit research-use permission avoid this issue. [One sentence — signals awareness; not a detailed discussion]
+- Standard searches and semantic searches (e.g. Elicit) as complements — catches papers keyword search misses; covers preprints and working papers
+- Candidate screening via configured keyword-based rubric with explicit criteria
+- Full-text relevance scoring across themes — algorithmic, auditable
+- Source synthesis via grounded AI tool (queries submitted to notebooks containing only the relevant PDFs) — contrast with general-purpose chatbot (unverifiable, no source accountability); query formulation is itself query authorship
+- Human verification at each stage: top-scored papers read independently; synthesis outputs cross-checked against sources
+- All outputs documented in supplementary materials (search strings, screening decisions, relevance scores, synthesis queries)
+
+### 4.3 Empirical data and analysis
+
+**Function**: Describes the governing principle and workflow for empirical projects with primary data. Scope: explicitly for quantitative and qualitative work with primary data; the paper's own production is literature-based and this section is anticipatory guidance rather than demonstrated practice.
+
+**Key principle**: Strict separation — the AI operates on the research context and on analysis scripts, not on the data itself.
+
+- Data folder hierarchy: Cookiecutter standard (`data/raw/` → `data/interim/` → `data/processed/` → `data/external/`); `data/raw/` is immutable — original data is a transparency artefact, never modified after receipt; enforced via `CLAUDE.md` rule and `.claudeignore`
+- AI-assisted analysis scripts: numbered sequentially (`01_import.R`, `02_clean.R`, etc.), with plain-language comments; researcher authors the specification (variable definitions, analytical strategy, edge-case rules); AI implements; legibility is a design requirement so the researcher can verify the specification was correctly implemented
+- GDPR/PII: `PreToolUse` hook runs a local PII scanner (Microsoft Presidio or custom Norwegian-identifier regex) before any file read operation — structural guarantee that raw personal data cannot be sent to the API; three-zone model: raw (never to API) / pseudonymised (AI-assisted cleaning) / anonymised (unrestricted use)
+- Human verification: intermediate outputs saved after each major transformation step; researcher inspects data at each stage without re-running the full pipeline
+- Transparency artefacts: analysis scripts, codebooks, data management protocols, PII hook configuration
+- For projects with personal data: systematic AI authorship is not merely epistemically preferable — it is the legally required approach under GDPR
+
+### 4.4 Drafting
 
 - Skill-configured AI persona (skardhamar-style) with explicit style criteria — forces articulation of what the target voice is, not just "make it sound like me"
 - Drafts are inputs to human revision, not outputs for direct use
 - All prompts and skill configurations retained as artefacts
 
-### 4.4 Review and adversarial configuration
+### 4.5 Review and adversarial configuration
 
 - Discipline-specific reviewer skills (social science article reviewer, logic-language reviewer, qualitative theory reviewer)
 - Each skill has explicit review criteria built in — not "does this seem good?" but "does this meet these specific standards?"
@@ -122,7 +139,7 @@ The argument must be tool-agnostic throughout. The structured/unstructured disti
 - Tool configuration can counteract known failure modes: explicitly instructing the AI to be critical, raise objections, and play devil's advocate addresses the sycophancy problem identified by Cheng et al. (2026). The user-level configuration used in this project documents epistemological commitments (severity testing, falsifiability, researcher degrees of freedom) — making them explicit rather than tacit, and encoding them as a permanent constraint on the tool's review behaviour. [Second appearance of Cheng et al. — shows that structured use means configuring against failure modes; first appearance in §3.1 framing unstructured use]
 - This is a concrete example of the structured/unstructured distinction: the same tool, identically prompted for content, produces epistemically different outputs depending on whether its review behaviour has been explicitly configured
 
-### 4.5 Documentation and replication package
+### 4.6 Documentation and replication package
 
 - All transparency artefacts compiled as supplementary material
 - Sociological Science's mandatory replication package requirement: prompt templates, skill files, R scripts, search logs serve as the replication package — strong fit. The supplementary materials for a non-empirical methods paper are themselves a demonstration of the argument: structured use produces replication-ready materials as a natural byproduct. This is not additional overhead.
@@ -192,11 +209,19 @@ The argument must be tool-agnostic throughout. The structured/unstructured disti
 
 ## 7. Conclusion
 
-- The structured/unstructured distinction changes the policy question
-- The query authorship concept clarifies what the human contribution in AI-assisted research actually is — not the text, but the intellectual commitments encoded in the query. This is citable, auditable, and open-science compatible.
-- Sociologists have the methodological vocabulary to engage with this — rigour, validity, transparency, replication are existing standards; structured AI use extends them into a new domain
-- The transparency artefacts produced by structured use are already a recognised open-science format; journal infrastructure exists to accommodate them
-- Open question for future work: formal validation studies comparing structured vs. unstructured AI use in sociology research tasks (analogous to Zeng et al. in data science)
+Five points must be present; see `notes/conclusion-requirements.md` for detail.
+
+1. **Systematic/unsystematic AI authorship as the analytical frame** — not use/non-use, not structured/unstructured as the primary frame. The central claim: systematic AI use is de facto an authorship contribution; the execution is not the most important element.
+
+2. **Query authorship as the mechanism** — intellectual contribution lies in the criteria, configuration, and verification design. This is citable, auditable, and open-science compatible.
+
+3. **Author-input files and session protocol as transparency artefacts** — novel mechanisms that document the human intellectual origin of the work, session by session. Part of the replication package. No self-referential framing ("this paper did X") — just name the artefacts and their function.
+
+4. **Journal policy directive** — the question journals should ask: not "did you use AI?" but "show us your systematic process." Operationalised through existing replication package norms; no new principle required.
+
+5. **The workflow as demonstration** — the supplementary materials (not this paper's prose) serve as the proof of concept. The paper makes the argument; the documentation enacts it.
+
+**Structural note**: Conclude on the policy directive, not on the empirical replication call. The Zeng et al. open question is a coda, not the closing move.
 
 ---
 

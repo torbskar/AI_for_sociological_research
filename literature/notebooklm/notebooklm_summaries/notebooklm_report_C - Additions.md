@@ -114,18 +114,76 @@ Note explicitly: (a) policies that make a structured/unstructured distinction;
 must authors declare, in what format, and at what stage of submission? What
 rationale is given for these requirements?*
 
-[Paste response.]
+Retningslinjer fra tidsskrifter og forlag pålegger forfattere spesifikke krav til åpenhet og dokumentasjon for å sikre vitenskapelig integritet og ansvarliggjøring (Ganjavi et al., 2024; Qu et al., 2025).
 
-**Author notes:** *[Note any requirements that implicitly reward structured
-use — e.g. requiring prompt logs, verification steps, or human oversight.]*
+### Hva forfattere må deklarere
+
+De fleste retningslinjer krever at forfattere gir en detaljert beskrivelse av hvordan KI er benyttet. Dette inkluderer ofte:
+
+* **Spesifikasjoner om verktøyet:** Navn på KI-verktøyet, modell, versjon og kilde/produsent (Ganjavi et al., 2024).
+* **Formål med bruken:** En redegjørelse for den spesifikke oppgaven verktøyet ble brukt til, som for eksempel språkvask, idégenerering eller dataanalyse (Ganjavi et al., 2024).
+* **Forfatteransvar:** En eksplisitt bekreftelse på at forfatterne bærer det fulle ansvaret for innholdet, inkludert deler produsert av KI (Ganjavi et al., 2024; Wieczorek et al., 2025).
+
+### Format og stadium for innsending
+
+Formatet for deklarering varierer betydelig mellom ulike utgivere, noe som skaper utfordringer for standardisering (Ganjavi et al., 2024).
+
+* **Plassering i manuskriptet:** De vanligste stedene å oppgi bruk er i **metodeseksjonen** (71 % av forlagene) eller i **takkeordene** (54 % av forlagene) (Ganjavi et al., 2024).
+* **Innsendingsstadiet:** Enkelte krever deklarering i **følgebrevet (cover letter)** ved første innsending (Ganjavi et al., 2024).
+* **Spesifikke maler:** Forlaget Elsevier krever at deklareringen skjer i en **egen, uavhengig seksjon** av manuskriptet ved bruk av en standardisert mal (Ganjavi et al., 2024).
+* **Pedagogiske grep:** I utdanningssammenheng foreslås det bruk av "refleksive annoteringer" hvor studenter dokumenterer KI-bruk underveis i prosessen for å synliggjøre menneske-maskin-samarbeidet (Qu et al., 2025).
+
+### Rasjonale for kravene
+
+Behovet for streng dokumentasjon begrunnes i flere kritiske faktorer:
+
+* **Mangel på ansvarsevne:** KI-verktøy anses som "ikke-juridiske enheter" som ikke kan holdes ansvarlige for unøyaktigheter, partiskhet eller plagiat (Ganjavi et al., 2024; Qu et al., 2025).
+* **Risiko for feil:** GAI-modeller kan "hallusinere" (fabrikkere informasjon) eller produsere villedende utdata basert på utdaterte treningsdata (Ganjavi et al., 2024; Wieczorek et al., 2025).
+* **Mangel på transparens:** KI-modeller er ofte "svarte bokser" hvor det er uklart hvordan de vekter informasjon, noe som krever at menneskelige eksperter verifiserer resultatene (Wieczorek et al., 2025).
+* **Beskyttelse av forfatterskap:** Dokumentasjonskrav skal forhindre "AI-ghostwriting" og sikre at intellektuelt arbeid forblir sporbart til menneskelige bidragsytere (Qu et al., 2025; Ganjavi et al., 2024).
+
+* * *
+
+**Sources not drawn on:**
+
+* **Ingen.** Alle tre kildene ble benyttet for å svare på spørsmålene om spesifikke deklarasjonskrav (Ganjavi et al., 2024), rasjonale knyttet til KI-modellenes natur (Wieczorek et al., 2025) og etiske spenninger knyttet til forfatterskap (Qu et al., 2025).**Author notes:** *[Note any requirements that implicitly reward structured
+  use — e.g. requiring prompt logs, verification steps, or human oversight.]*
 
 ---
 
 ## 4. Authorship and integrity
 
-*Q4: How do sources treat AI and authorship — can AI be listed as an author,
-and on what grounds? What research integrity concerns are raised in relation
-to AI use, and how are they proposed to be addressed?*
+Kildene er samstemte i at **kunstig intelligens (KI) ikke kan krediteres som forfatter** av akademiske eller vitenskapelige verk (Ganjavi et al., 2024; Qu et al., 2025). En analyse av de 100 største forlagene og de 100 høyest rangerte tidsskriftene viser at henholdsvis 96 % og 98 % av de som har retningslinjer, eksplisitt forbyr KI-forfatterskap (Ganjavi et al., 2024).
+
+### Grunnlaget for forbud mot KI-forfatterskap
+
+Hovedbegrunnelsen for at KI nektes forfatterskap er at verktøyene **mangler evne til å ta ansvar** for det innsendte arbeidet (Ganjavi et al., 2024; Qu et al., 2025). Retningslinjer fra organisasjoner som Committee on Publication Ethics (COPE) understreker at forfatterskap innebærer juridisk og etisk ansvarlighet, noe en KI ikke kan oppfylle (Ganjavi et al., 2024). Videre defineres KI-verktøy som **"ikke-juridiske enheter"** som ikke kan inngå avtaler om opphavsrett, lisensiering eller erklære interessekonflikter (Ganjavi et al., 2024).
+
+### Bekymringer knyttet til forskningsintegritet
+
+Bruk av generativ KI reiser flere alvorlige bekymringer for integriteten i forskningsprosessen:
+
+* **Unøyaktighet og "hallusinering":** KI-verktøy er kjent for å fabrikkere ugrunnet informasjon eller referanser (Ganjavi et al., 2024; Wieczorek et al., 2025).
+* **Innebygd bias:** Modellene er trent på enorme datasett som kan inneholde historiske, sosiale eller internettbaserte fordommer, noe som kan føre til partiske resultater (Wieczorek et al., 2025; Ganjavi et al., 2024).
+* **Plagiat og eierskap:** Det er en risiko for at KI dupliserer tekst direkte fra kildemateriale uten korrekt kildehenvisning (Ganjavi et al., 2024).
+* **Kognitiv svekkelse:** Forskere advarer mot "metakognitiv latskap" og "kognitiv gjeld", der brukere delegerer refleksjon og selvovervåking til systemet i stedet for å utvikle egen analytisk tenkning (Qu et al., 2025).
+* **Mangel på transparens:** KI-modeller fungerer ofte som "svarte bokser" der det er uklart hvordan ulike perspektiver vektes (Wieczorek et al., 2025).
+
+### Forslag til tiltak og løsninger
+
+For å håndtere disse utfordringene foreslår kildene flere strategier:
+
+* **Menneskelig ansvarliggjøring:** Det absolutte kravet er at menneskelige forfattere må verifisere alt KI-generert innhold og ta det fulle ansvaret for manuskriptets integritet (Ganjavi et al., 2024; Wieczorek et al., 2025).
+* **Standardiserte deklarasjonskrav:** Det etterlyses universelle retningslinjer (som CANGARU-initiativet) for hvordan KI-bruk skal oppgis, inkludert krav om å spesifisere verktøyets navn, versjon og formål (Ganjavi et al., 2024).
+* **Refleksive annoteringer:** I undervisningssammenheng foreslås det at studenter dokumenterer KI-bruk underveis for å synliggjøre samarbeidet mellom menneske og maskin og motvirke "AI-ghostwriting" (Qu et al., 2025).
+* **Prosessorientert vurdering:** Institusjoner oppfordres til å legge mer vekt på utkast, revisjonshistorikk og annoteringer i karaktersettingen for å anerkjenne det faktiske kognitive arbeidet (Qu et al., 2025).
+* **Integrering med tradisjonelle metoder:** Ved bruk av KI til forskningssyntese bør resultatene alltid suppleres og kvalitetssikres gjennom etablerte metoder som Delphi-studier eller ekspertpaneler (Wieczorek et al., 2025).
+
+* * *
+
+**Sources not drawn on:**
+
+* **Ingen.** Alle tre kildene ble benyttet for å belyse forfatterskap (Ganjavi et al., 2024), etiske spenninger (Qu et al., 2025) og metodiske begrensninger ved KI-bruk (Wieczorek et al., 2025).
 
 [Paste response.]
 
@@ -140,50 +198,69 @@ transparency/documentation or around prohibition.]*
 emerging consensus, ongoing divergence, or evidence of convergence toward
 particular models? What are the main unresolved tensions?*
 
-[Paste response.]
+Dagens situasjon for tidsskriftenes retningslinjer om kunstig intelligens (KI) er preget av en **fremvoksende konsensus om grunnleggende prinsipper**, men med en **vedvarende og betydelig divergens i praktisk implementering** (Ganjavi et al., 2024; Qu et al., 2025).
 
-**Author notes:** *[What the literature supports for the paper's policy
-critique; what is contested; what is absent — in particular, whether any
-source has proposed a documentation-based framework as an alternative to
-blanket restriction.]*
+### Konsensus, divergens og konvergens
 
----
+Det eksisterer en nesten universell konsensus (96–98 %) om at **KI-verktøy ikke kan krediteres som forfattere**, da de ikke kan ta juridisk eller etisk ansvar for innholdet (Ganjavi et al., 2024; Qu et al., 2025). Det er også bred enighet om at **åpenhet og deklarering av KI-bruk er nødvendig** for å opprettholde vitenskapelig integritet (Ganjavi et al., 2024; Wieczorek et al., 2025).
 
-## Key claims for the paper
+Samtidig er det stor divergens på andre områder:
 
-| Claim | Source(s) | Section in paper |
-| ----- | --------- | ---------------- |
-|       |           |                  |
-|       |           |                  |
-|       |           |                  |
+* **Tillatt bruk:** Retningslinjene varierer fra totalforbud mot KI-generert innhold til permissive modeller som tillater KI så lenge det deklareres (Ganjavi et al., 2024).
+* **Motstridende regler:** Det er avdekket tilfeller der retningslinjer hos individuelle tidsskrifter **direkte motsier reglene til forlaget** de tilhører, noe som skaper usikkerhet for forfattere (Ganjavi et al., 2024).
+* **Standardisering:** Det er foreløpig lite bevis på konvergens mot én felles modell, bortsett fra hos enkelte store forlag som Elsevier, som har innført standardiserte maler (Ganjavi et al., 2024).
 
----
+### Uavklarte spenninger
 
-## Gaps and follow-up
+De viktigste uavklarte spenningene knytter seg til:
 
--
--
+1. **Ansvarliggjøring:** Siden KI er en "ikke-juridisk enhet", er det uklart hvordan man skal håndtere feil, bias eller plagiat generert av maskiner utover å legge alt ansvar på menneskelige forfattere (Ganjavi et al., 2024; Wieczorek et al., 2025).
+2. **Transparens vs. "Svarte bokser":** Det er en fundamental spenning mellom kravet om vitenskapelig etterrettelighet og KI-modellenes lukkede natur, hvor selve beslutningsprosessene i algoritmene ofte er ugjennomsiktige (Wieczorek et al., 2025).
+3. **Kognitiv gjeld:** Det er en økende bekymring for at utstrakt KI-bruk fører til "kognitiv gjeld" og "metakognitiv latskap", hvor forskere og studenter delegerer analytisk tenkning til verktøyene i stedet for å utvikle egen kompetanse (Qu et al., 2025).
 
----
+* * *
 
-## Sources not drawn on
+Key claims for the paper
+------------------------
 
-*Q6: Which sources were not cited in your previous responses, and why — not
-relevant, too general, or overlapping with a stronger source?*
+| Claim                                                                              | Source(s)                                      | Section in paper                    |
+| ---------------------------------------------------------------------------------- | ---------------------------------------------- | ----------------------------------- |
+| KI-verktøy kan ikke listes som forfattere pga. manglende ansvarsevne.              | (Ganjavi et al., 2024; Qu et al., 2025)        | Authorship / Ethical responsibility |
+| Det er stor mangel på standardisering i hvordan KI-bruk skal deklareres.           | (Ganjavi et al., 2024)                         | Results / Disclosure criteria       |
+| KI-modeller krever menneskelig overvåking pga. risiko for "hallusinering" og bias. | (Wieczorek et al., 2025; Ganjavi et al., 2024) | Discussion / Research integrity     |
+| Disiplinære normer påvirker i stor grad hvordan KI-bruk oppfattes og deklareres.   | (Qu et al., 2025)                              | Disciplinary differences            |
 
-[Paste response, then supplement from Q0 list.]
+* * *
 
-| Source | Reason not cited |
-| ------ | ---------------- |
-|        |                  |
-|        |                  |
+Gaps and follow-up
+------------------
 
----
+* Det mangler studier på hvordan redaktører og fagfeller i praksis håndterer manuskripter som deklarerer omfattende KI-bruk (Ganjavi et al., 2024).
+* Det er behov for mer forskning på langtidseffektene av "kognitiv gjeld" ved bruk av KI i forskerutdanning (Qu et al., 2025).
+* Universelle, tverrfaglige retningslinjer (som CANGARU) er under utvikling, men effekten av disse er ennå ikke kjent (Ganjavi et al., 2024).
+
+* * *
+
+Sources not drawn on
+--------------------
+
+**Q6: Which sources were not cited in your previous responses, and why — not relevant, too general, or overlapping with a stronger source?**
+
+Alle tre kildene i denne kildesamlingen har blitt sitert i de foregående svarene, da de alle gir utfyllende perspektiver på retningslinjer, etikk og praktisk bruk av KI.
+
+| Source    | Reason not cited                                                                                   |
+| --------- | -------------------------------------------------------------------------------------------------- |
+| **Ingen** | Alle kilder var relevante og ble trukket inn for å belyse ulike aspekter ved problemstillingen.--- |
 
 ## References
 
-*Cited sources with full references from `literature/openalex_retained.csv`.
-Format: Author(s) (Year). Title. Journal. DOI.*
+Her er de fulle referansene for kildene brukt i denne oversikten, formatert etter dine instruksjoner:
+
+**Qu, Y., Loo, H. E., & Wang, J. (2025). Generative artificial intelligence in higher education: Emotional tensions and ethical declaration. British Journal of Educational Technology. 10.1111/bjet.70029.**
+
+**Wieczorek, M., Kliegel, M., Beard, J., Guillemin, F., Avendano, M., & Maurer, J. (2025). Can ChatGPT Provide Useful Guidance to Assess the Current State of and Future Priorities for Aging Research in the Social Sciences? Journal of Aging & Social Policy. 10.1080/08959420.2024.2422669.**
+
+**Ganjavi, C., Eppler, M. B., Pekcan, A., Biedermann, B., Abreu, A., Collins, G. S., Gill, I. S., & Cacciamani, G. E. (2024). Publishers’ and journals’ instructions to authors on use of generative artificial intelligence in academic and scientific publishing: bibliometric analysis. BMJ. 10.1136/bmj-2023-077192.**
 
 ---
 
