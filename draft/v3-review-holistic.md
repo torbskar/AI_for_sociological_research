@@ -47,6 +47,8 @@ A reader can reconstruct that the two pairs mean the same thing, but the paper n
 
 Alternative: if the author wants to retain "structured/unstructured" at the section-heading level because it reads more concretely, then add a sentence at the first use (§3, opening) stating the two pairs are used interchangeably and why — but this is the weaker option.
 
+[Author comment: I have chosed systematic throughout, but use structured a couple of places where it fits and also to vary the language slightly]
+
 ### 1.2 §1 move 1 and §5.4 sit in tension
 
 §1 states that systematic and unsystematic use "differ not merely in transparency but in epistemic quality: systematic use makes errors visible and correctable; unsystematic use does not."
@@ -56,6 +58,8 @@ Alternative: if the author wants to retain "structured/unstructured" at the sect
 These can be reconciled — "epistemic quality" in §1 meaning the *evaluability* of the work, not its average accuracy — but the surface reading is a contradiction. A policy-adjacent reviewer will notice.
 
 **Fix:** tighten §1 move 1. Replace "differ not merely in transparency but in epistemic quality" with "differ not in average output quality but in epistemic standing: systematic use makes errors visible and correctable; unsystematic use does not." This aligns §1 with §5.3 (no demonstrated quality difference) and §5.4 (visibility, not average accuracy, is the point).
+
+ [Author comment: I have adjusted §5.4 instead to say that one cannot rule out that the AI makes similar quality. However, §5.3 suggest that it probably do not. I prefer to hold that interpretation open, but still avoid direct contradiction and not making to strong claims.]
 
 ### 1.3 The "eight stages" mismatch in §4.1
 
@@ -67,6 +71,8 @@ The mismatch is not fatal — the stages are conceptual, the subsections are org
 
 **Fix (lightest touch):** add one clause to the §4.1 sentence: "A systematic workflow for this purpose has eight stages — literature search, candidate screening, full-text screening, source organisation and synthesis, empirical data and analysis, drafting, review, and documentation — organised below into five subsections (the first four literature stages are treated together)."
 
+[Author comment: I have changed the eight stages into five. Folding the literature part into one stage and simplified a bit. Any empirical analysis would also include a number of additional steps within that stage. A tighter presentation is better. I think most readers will know very well that each stage has multiple sub-stages]
+
 ### 1.4 §3.2's "four defining features" — the fourth overlaps with the others
 
 The four features are listed as: explicit criteria, human verification, documented outputs, and "a documented workflow or pipeline with an associated file structure that supports progress across the full project."
@@ -74,6 +80,8 @@ The four features are listed as: explicit criteria, human verification, document
 The fourth is not a fourth feature of equal standing with the first three — it is a structural precondition that subsumes them. A file structure is the container; the first three are what fills it. Listing it as a co-ordinate item muddles the analytic structure and makes the §3.2 paragraph that follows ("This project-level structure...") read as if it were stepping back to a higher level, which it is.
 
 **Fix:** restructure as three defining features (explicit criteria, human verification, documented outputs) plus a closing sentence — or paragraph — that says these three are implemented through a project-level configuration and file structure. This matches how the rest of the paper actually uses the concepts.
+
+[Author comment: I have made that change. I have folded the previous fourth feature into the following paragraph]
 
 ---
 
@@ -92,6 +100,8 @@ The "Similarly, while a section on literature search and review is included belo
 
 **Fix:** split into two paragraphs. First paragraph: scope (who this is for, what is covered, the empirical caveat pointing to §4.3). Second paragraph: tool disclosure. Drop or rewrite the "Similarly..." sentence — the literature-focus point is already implicit in §4.1's scope note and doesn't need advance warning.
 
+[Author comment: done]
+
 ### 2.2 §2.1 opener is generic
 
 "Large language models have been widely adopted across academic disciplines, transforming scientific practice (Grossmann et al. 2023)."
@@ -100,6 +110,8 @@ This is the "AI is changing everything" opener that the project instructions war
 
 **Fix:** Open §2.1 with a claim that does work, e.g. "AI tools are now widely used across academic disciplines (Grossmann et al. 2023), and in sociology their uptake has outpaced the institutional frameworks for evaluating them. Korinek (2023) catalogues practical use cases for economists and social scientists; Feuerriegel et al. (2024) trace early adoption in information systems. The question of whether AI has entered research practice is settled; what remains contested is what kind of practice has emerged and what kind should be."
 
+[Author comment: done]
+
 ### 2.3 §2.2's central claim is strong and should be hedged more precisely
 
 "To my knowledge, no existing work has applied these criteria to AI-assisted research in a way that asks whether the human researcher meets them."
@@ -107,6 +119,8 @@ This is the "AI is changing everything" opener that the project instructions war
 This is essentially the paper's contribution claim. It is stated three times in the paper (§2.2, §5.5, §7) with slightly different wording. A committed critic could find counterexamples — some editorial commentary in medical journals has raised this, and the ICMJE itself has addressed AI authorship, though not in the direction the paper develops.
 
 **Fix:** specify the scope of the claim more narrowly. "To my knowledge, no existing work has developed the ICMJE criteria into a positive framework for evaluating the human researcher's contribution in AI-assisted work — as distinct from applying them negatively to rule out AI authorship, which is widely done." This is both more defensible and more precise about the contribution.
+
+[Author comment: done]
 
 ### 2.4 §5.5 on "structural vs presumptive accountability" — load-bearing claim deserves more care
 
@@ -200,6 +214,7 @@ Claims checked across sections:
 ## Prioritised action list
 
 **Fix before submission:**
+
 1. Choose one term pair (systematic/unsystematic) and apply throughout (title, §3 headings, §3.1–3.2 bodies, footer).
 2. Reconcile §1 move 1 with §5.4.
 3. Fix the eight-stages/five-subsections mismatch in §4.1.
@@ -235,6 +250,7 @@ The following six mechanical edits were applied directly to `v3-draft.md`:
 All items marked **[MANUAL]** above remain for the author to apply, as they involve argumentative framing, structural choices, or house-style decisions.
 
 **Already carried, not in scope for this review:**
+
 - Freese & Peterson attribution (notes/freese-peterson-attribution.md)
 - Outstanding reference stubs (logs/2026-04-16.md open questions)
 - Agha et al. (2025) reference entry
