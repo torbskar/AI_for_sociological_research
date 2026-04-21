@@ -128,11 +128,15 @@ The claim that systematic AI authorship produces accountability that is "stronge
 
 **Fix:** reverse the order. State the narrower claim first — the *type* of accountability is different — and then allow the comparative statement to follow as an implication. Something like: "The replication package and session logs constitute accountability that is structural rather than presumptive; in the specific sense that criterion 4 requires — the capacity to investigate — this is a different type of accountability than what recall-based reconstruction provides, and arguably a stronger one for the evidential purposes criterion 4 names. I am not claiming that AI-assisted research is better research..."
 
+[Author comment: done, and slightly re-formulated. This is worth assessing again in the next review to check. ]
+
 ### 2.5 §4.6 → §5 bridge now works but leaves a residual seam at §4.6's opening
 
 The rewritten bridge paragraph at the end of §4.6 is effective. But §4.6 itself still opens with "The documentation produced across all stages of the workflow is structured in two tiers" — a dense opening that pitches into content without orienting the reader. The section carries three threads (two-tier logs, CRediT attribution, replication package) and the bridge paragraph is now doing the work of synthesising them. Worth a second look: does §4.6 earn its place in §4, or would it work better as the first subsection of §5?
 
 **Less invasive fix:** add an orienting sentence at the top of §4.6 that names the three threads before developing them. No structural change needed.
+
+[Author comment: Not done yet. Must return to this.]
 
 ---
 
@@ -142,6 +146,8 @@ The rewritten bridge paragraph at the end of §4.6 is effective. But §4.6 itsel
 
 - **[DONE]** "externalises tacit decisions" → "externalises tacit commitments" (matches §5.1's careful distinction between inherent and implicit tacit knowledge; "decisions" is looser than the paper's own usage).
 - **[MANUAL]** The abstract does not mention the ICMJE bridge, which is arguably the paper's most distinctive move. Consider adding one clause: "and shows that the ICMJE authorship criteria, applied positively rather than merely negatively, give policy a more tractable question than whether AI was used." (Space permitting — the abstract is at ~175 words; SocSci cap is 150, so something else would have to come out.)
+
+[Author comment: Partly done, but must consider refine better. I have removed the part on replication package as this is probably not necessary in the abstract]
 
 ### 3.2 §3.1 last paragraph
 
@@ -180,6 +186,8 @@ Mondal (line 279), Holst (273–274 — split across two lines, malformed indent
 ### 3.9 Agha et al. (2025)
 
 Cited in §2.1 as TITAN; not in reference list. Already flagged in the open-questions log — noting here for completeness.
+
+[DONE]
 
 ---
 
