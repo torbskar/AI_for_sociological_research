@@ -1,4 +1,5 @@
 # Synthesis: Persona Reviews
+
 **Date:** 2026-04-19 (updated 2026-04-21 with asshole-reviewer material)
 **Models covered:** Claude (all 6 personas), Gemini (all 6 personas), ChatGPT (Personas 1–2 only — free tier limit reached), plus Persona 7: asshole-reviewer (public attacks + backchannel critiques + internal defence assessment)
 **Protocol:** Act on objections raised by 2+ models independently; flag for judgment those raised by only one; note divergence as a signal of genuine ambiguity. The asshole-reviewer is a single-source voice but is deliberately adversarial and routes around existing defences — its attacks are treated as serious if not rebutted by existing concessions.
@@ -230,7 +231,7 @@ Polanyi, Collins on tacit knowledge, and Krippendorff are absent. The qualitativ
 - **N5 is orthogonal** to all six personas and is the only venue-level objection surfaced in the review set.
 - **N6–N7 do not have textual refutations**; they set a literature-engagement requirement and an introduction-level framing requirement.
 
-### Updated revision actions (supersedes earlier list where marked)
+###  Updated revision actions (supersedes earlier list where marked)
 
 **G. ICMJE demotion (§5.5 and abstract) — SUPERSEDES earlier treatment.**
 Remove "arguably stronger." Reframe ICMJE from normative source to motivating analogue. Documentation is an *evidentiary supplement* to criterion 4, not a substitute for the accountable-commitment the criterion names. Draft text available in `asshole-reviewer/defence_assessment.md` §Attack 1.

@@ -27,6 +27,18 @@ Scopus's terms of service restrict using exported data to feed into AI systems f
 
 **Practical note:** The use case here — filtering a literature search for a research project — is what Scopus exists to support. The restriction is more plausibly aimed at commercial exploitation. But this needs formal confirmation rather than inference.
 
+### 1a. Using Scopus exports in ASReview
+
+**Status: Grey zone — same basis as above, with additional software-layer considerations**
+
+ASReview is an open-source active learning tool for systematic literature screening. The workflow involves exporting a RIS or CSV file from Scopus and loading it into ASReview for AI-assisted relevance screening. This adds one software layer to the Scopus concern already noted, but does not change the underlying legal analysis.
+
+The key questions are the same: does the UiO institutional Scopus agreement permit feeding exported metadata into a computational analysis tool for academic research purposes? The analysis tool being ASReview rather than Claude does not alter the contractual position — the restriction is on data use, not the identity of the downstream software.
+
+**Additional practical note:** ASReview processes only the metadata fields present in the export (title, abstract, keywords, publication type) and no full text. The data footprint is therefore more limited than full-text TDM. This may be relevant if the licence agreement distinguishes between metadata-only and full-text computational use — a distinction worth raising explicitly in the library consultation.
+
+ASReview runs locally and retains no data outside the user's machine. This eliminates any third-party data processing concern that might arise with cloud-based tools, but — again — does not resolve the upstream contractual question about exporting Scopus data for computational analysis.
+
 ---
 
 ## 2. Full text from Unpaywall / open access routes
@@ -73,14 +85,34 @@ Tool choice affects data handling and privacy, not the legal basis for analysis.
 
 **One practical distinction:** NotebookLM is the only tool where uploaded content persists beyond the session. For published papers this is not material. For pre-publication manuscripts from other researchers, data handling terms would require separate consideration.
 
+### 4a. Using UiO full-text PDFs in NotebookLM
+
+**Status: Legally likely permitted; data handling requires attention**
+
+The legal basis for uploading and analysing full-text PDFs in NotebookLM is the same as for any other full-text TDM tool: the EU/EEA statutory TDM exception (Art. 4, EU Copyright Directive) and, where applicable, explicit TDM clauses in UiO's publisher licence agreements (see section 3). Neither is tool-specific.
+
+However, NotebookLM introduces a data handling dimension that other tools in this workflow do not. When a PDF is uploaded to NotebookLM, the content is processed and stored on Google's servers for the lifetime of the notebook. Google's current policy states that notebook content is not used to train their models, but the data does reside on third-party infrastructure for an indefinite period.
+
+**The relevant concern is not copyright infringement; it is whether uploading publisher PDFs to a third-party cloud service is consistent with UiO's licence terms with those publishers.** Most major publisher agreements are silent on this specific scenario. A few (notably Elsevier's current institutional agreements) include clauses requiring that access to licensed content be restricted to authorised users and not transferred to third parties. Whether uploading to NotebookLM for personal research analysis constitutes "transfer to a third party" under such clauses is legally ambiguous — the better argument is that it does not, because the user retains control, access is not shared, and the purpose is consistent with the licensed use — but this has not been tested.
+
+**Practical guidance for the paper's workflow:**
+- Use NotebookLM for synthesis and argument development, not for long-term storage of publisher PDFs.
+- Delete notebooks (and thus the stored PDFs) once the analysis is complete and notes have been exported.
+- Where an OA version of a paper is available (via Unpaywall or institutional repository), upload that instead of the publisher PDF — this removes the licence question entirely.
+- Document which sources were uploaded and confirm that no pre-publication or confidential materials were included.
+
+**Confirm with UiO library:** Whether UiO has issued any guidance on uploading licensed full-text content to third-party cloud analysis tools, and whether any publisher agreements include relevant restrictions.
+
 ---
 
 ## 5. Questions for UiO library
 
 1. Does UiO's institutional Scopus agreement include a clause permitting computational analysis of exported metadata for research purposes?
-2. Which major publishers have explicit TDM permissions in their UiO licence agreements?
-3. Has UiO formally assessed the scope of the EU/EEA statutory TDM exception (EU Copyright Directive Art. 4) for AI-assisted analysis workflows?
-4. Is there a recommended procedure for documenting compliance when using full text analysis in a published research workflow?
+2. Does that clause distinguish between metadata-only tools (e.g. ASReview) and full-text analysis — and if so, does the metadata-only case receive broader permission?
+3. Which major publishers have explicit TDM permissions in their UiO licence agreements?
+4. Has UiO formally assessed the scope of the EU/EEA statutory TDM exception (EU Copyright Directive Art. 4) for AI-assisted analysis workflows?
+5. Is there a recommended procedure for documenting compliance when using full text analysis in a published research workflow?
+6. Has UiO issued guidance on uploading licensed publisher PDFs to third-party cloud tools (e.g. NotebookLM) for personal research analysis? Do any publisher agreements in the UiO portfolio include explicit restrictions on this?
 
 ---
 
@@ -101,7 +133,9 @@ Both points belong in the paper — the first as an illustration of policy blunt
 | Issue | Status | Action |
 |-------|--------|--------|
 | Scopus metadata export terms | Unresolved | Contact UiO library |
+| Scopus exports → ASReview (metadata only) | Unresolved | Same library consultation; raise metadata-only distinction |
 | Unpaywall / OA full text | Resolved — permitted | None |
 | Publisher full text via UiO | Likely permitted | Confirm TDM clauses with library |
 | EU TDM statutory exception | Likely applies | Confirm with library |
 | Tool choice legal equivalence | Resolved | None |
+| UiO full-text PDFs → NotebookLM | Likely permitted; data handling ambiguous | Prefer OA versions; delete notebooks after use; confirm with library |
