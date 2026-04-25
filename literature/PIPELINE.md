@@ -55,6 +55,7 @@ Python standard library.
 | 7 | `screen_fulltexts.py` | `literature/automated_literature_searches/fulltext_scores.csv` |
 | 7b | `populate_upload_folders.py` | `literature/notebooklm/upload_theme_[a/b/c]/` |
 | 7b | ✋ Upload theme folders to NotebookLM | — |
+| 7c | ✋ Write search summary report | `literature/automated_literature_searches/search_summary_report.md` |
 | 8 | `export_notebooklm.py` | `literature/notebooklm/notebooklm_export/` |
 | 8 | ✋ Review composite export | — |
 
@@ -393,6 +394,31 @@ the papers most relevant to that specific theme.
 
 ---
 
+## Step 7c — Generate search summary report
+
+```powershell
+# No script — compile manually from fulltext_report.md and boolean-searches.md
+```
+
+After populating the upload folders, write a summary report covering the full pipeline from search to upload. This serves as the human-readable record for methods reporting and replication.
+
+### Output
+
+`literature/automated_literature_searches/search_summary_report.md`
+
+### Contents
+
+| Section | Source |
+|---------|--------|
+| Combined pipeline totals (records retrieved, retained, screened, skipped) | `boolean-searches.md` search log + `fulltext_report.md` |
+| Per-theme: full-text score ≥ 3 count and N uploaded to NotebookLM | `fulltext_report.md` + upload folder counts |
+| Theme overlap (A∩B, A∩C, B∩C, A∩B∩C) | `fulltext_report.md` |
+| Notes on search string–theme mapping and any deviations | — |
+
+Update this file whenever the pipeline is re-run (new search version, PLOS ONE removal, etc.).
+
+---
+
 ## Step 8 — Export to NotebookLM
 
 **Script:** `scripts/export_notebooklm.py`
@@ -486,6 +512,7 @@ or reduce `--top-n` to `8`.
 | `literature/automated_literature_searches/fulltext_scores.csv` | Full-text relevance scores (all PDFs) |
 | `literature/automated_literature_searches/fulltext_theme_[a/b/c].csv` | Top papers per theme |
 | `literature/automated_literature_searches/fulltext_report.md` | Full-text screening summary |
+| `literature/automated_literature_searches/search_summary_report.md` | Human-readable pipeline summary (totals + per-theme counts) |
 | `literature/notebooklm/notebooklm_export/_manifest.csv` | NotebookLM export contents |
 
 ---

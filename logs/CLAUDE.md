@@ -61,6 +61,24 @@ Every session log must be accompanied by a paired `YYYY-MM-DD-author-input.md` f
 
 **Format:** Continuous prose, first person. Not a list. The tone is that of a research memo to oneself — precise but not formal.
 
+### Claude-contribution file
+
+Every session log must also be accompanied by a `YYYY-MM-DD-claude-contribution.md` file. This is the counterpart to the author-input file: it documents what Claude contributed intellectually to the session, written in neutral third-person academic register by Claude at the end of the session.
+
+**Purpose:** To complete the transparency record of the human-AI division of intellectual labour. The author-input file records the author's contributions; this file records Claude's. Together they allow a full account of who originated what — essential for query-authorship transparency and for any CRediT-style disclosure.
+
+**What to include:**
+- Decisions Claude proposed and the reasoning behind them (only when non-obvious)
+- Initiative attribution for each substantive contribution: *Initiated by author query* or *Claude initiative*
+- Query-authorship annotations when the author's query itself was an intellectual contribution — a framing, criteria specification, diagnostic question, or structural insight: *Author query as intellectual contribution — [description]*
+
+**What to exclude:**
+- Routine file operations and formatting
+- Trivial tool calls and confirmations
+- Session narrative — record intellectual output, not process
+
+**Format:** Neutral third-person, structured by work stage (mirroring the decision log). Typical length: 300–600 words for a substantive session.
+
 ### Session-start protocol
 
 At the start of each new session (i.e. when today's date differs from the most recent log entry), do the following before any other work:
@@ -68,8 +86,8 @@ At the start of each new session (i.e. when today's date differs from the most r
 1. Run `bash scripts/log_session_meta.sh` from the project root to capture CLI and model version. If the output says "Version change logged", note the new version in today's decision log.
 2. Read `logs/log-index.md` to identify the most recent log date.
 3. Check whether log files exist for every date between the most recent log and today. If any dates are missing, check whether project files were modified on those dates (e.g. notes created, CLAUDE.md edited, scripts changed). If so, reconstruct the missing log and author-input files from available evidence before proceeding.
-4. Read the most recent log file and author-input file.
-5. Write a brief summary of the previous session as `logs/YYYY-MM-DD-session-summary.md` (where the date is today's date). The summary should cover: what was worked on, what decisions were made, and what the author contributed or initiated. Keep it to a short paragraph — this is a transition record, not a full recap.
+4. Read the most recent log file, author-input file, and claude-contribution file.
+5. Write a brief summary of the previous session as `logs/YYYY-MM-DD-session-summary.md` (where the date is today's date). The summary should cover: what was worked on, what decisions were made, what the author initiated, and what Claude initiated. Keep it to a short paragraph — this is a transition record, not a full recap.
 6. Set up a background log-check cron job: every 2 hours at :17, check whether a log file exists for today and create one if substantive work has occurred in the conversation. This job is session-only and must be recreated each session.
 7. After completing steps 1–6, ask: "The previous session has been summarised in `logs/YYYY-MM-DD-session-summary.md`. Would you like to run `/clear` to start with a clean context? All state is stored in project files."
 
@@ -79,6 +97,6 @@ At the start of each new session (i.e. when today's date differs from the most r
 
 `log-index.md` maintains a single running table:
 
-| Date | Decision log | Author-input log | Key decisions |
-|------|------|------|---------------|
-| YYYY-MM-DD | filename | filename | one-line summary |
+| Date | Decision log | Author-input | Claude-contribution | Key decisions |
+|------|------|------|------|---------------|
+| YYYY-MM-DD | filename | filename | filename | one-line summary |

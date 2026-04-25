@@ -99,19 +99,6 @@ I have identified **46 distinct sources** in this notebook. I could not identify
 science, and transparency practices — what problems are they argued to solve,
 and how? Draw on all sources from Q0.*
 
-[Paste response.]
-
-**Author notes:** *[Which problems recur? Which are specific to one field?
-Note any claims that connect directly to structured AI use as an analogous practice.]*
-
----
-
-## 2. Tacit knowledge in research
-
-*Q2: How do sources treat tacit knowledge in research — as a problem, a
-resource, or both? What role does making reasoning explicit play? Are there
-accounts of what tacit knowledge consists of in practice?*
-
 Sources attribute several critical epistemic functions to pre-registration, open science, and transparency practices, framing them as essential tools to align scientific practice with scientific ideals such as communality, organized skepticism, and disinterestedness (Grant et al., 2022). These practices are argued to solve systematic failures in research credibility—collectively termed the "replication crisis" or "method crisis"—by increasing the transparency, robustness, and reliability of scientific findings (Nakagawa et al., 2025; Soliman et al., 2025; Toribio-Flórez et al., 2021).
 
 ### Regulating the Research Process and Reducing Bias
@@ -152,6 +139,63 @@ Practices of transparency are argued to reduce **knowledge asymmetry** between r
 * **Wacharamanotham et al. (al_2024)**: This source focuses specifically on teaching replications in HCI and the impact of pedagogical models, which is secondary to the epistemic functions of research practices themselves.
 * **Article (2022)**: Portions of this source cover the prevalence of stigma among QRP users, which, while relevant sociologically, does not directly explain the epistemic mechanics of open science practices.
 
+**Author notes:** *[Which problems recur? Which are specific to one field?
+Note any claims that connect directly to structured AI use as an analogous practice.]*
+
+---
+
+## 2. Tacit knowledge in research
+
+*Q2: How do sources treat tacit knowledge in research — as a problem, a
+resource, or both? What role does making reasoning explicit play? Are there
+accounts of what tacit knowledge consists of in practice?*
+
+Sources treat tacit knowledge in research as both a significant **problem** that undermines reproducibility and a necessary **resource** for rigorous inquiry, particularly in qualitative traditions. The process of making reasoning explicit is viewed as a mechanism to transform "hidden" researcher decisions into auditable evidence, thereby enhancing research integrity (Cole et al., 2023; Nakagawa et al., 2025; Silverstein et al., 2024).
+
+### Tacit Knowledge as a Problem: The "Hidden Universe" of Decisions
+
+In quantitative and experimental contexts, tacit knowledge is primarily identified as a barrier to verification and a source of epistemic risk (van den Akker et al., 2023; van Miltenburg et al., 2023).
+
+* **Undisclosed Flexibility:** Sources argue that researchers possess "practically unlimited researcher degrees of freedom," involving ad-hoc decisions that remain undisclosed in final reports (Sweeten, 2020). These include choices about when to stop data collection, which outliers to exclude, and which variables to include as controls (Article, 2022; Simmons et al., 2011).
+* **The Interpretation Crisis:** Tacit assumptions lead to an "interpretation crisis" where verbal theories are too vague to provide specific predictions, allowing researchers to "HARK up a shitty theory" to fit unexpected results (Nakagawa et al., 2024; Nakagawa et al., 2025; Penders, 2022).
+* **Analytical Dispersion:** When different analysts test the same hypothesis with the same data, results vary radically because of a "hidden universe of uncertainty" rooted in personal, unrecorded analytic choices (Breznau et al., 2022; Botvinik-Nezer et al., 2022).
+* **Incomplete Reporting:** Methodological descriptions are frequently too vague to allow independent replication without direct contact with original authors, a problem described as a lack of "preproducibility" (Botvinik-Nezer et al., 2022; Stark, 2018).
+
+### Tacit Knowledge as a Resource: The "Embodied Knower"
+
+Conversely, in qualitative and interpretivist traditions, tacit knowledge is viewed as an essential component of the research process that must be managed rather than eliminated (Cole et al., 2023; Fixter et al., 2025).
+
+* **Situated Knowledge:** Knowledge is seen as "situated, embodied, and goal-directed," where the researcher's personal experience and "skilful action" are core to the discovery process (Leonelli, 2023).
+* **The Researcher as Instrument:** In traditions such as ethnography, the social reality documented does not exist independently of the researcher, making the researcher an "active participant" whose personal insights are a primary research tool (Cole et al., 2023; Fixter et al., 2025).
+* **Judicious Connection:** Openness is reframed not just as sharing data-objects but as establishing "judicious connections" between researchers that acknowledge the history, context, and "baggage" of research artifacts (Leonelli, 2023).
+
+### The Role of Making Reasoning Explicit
+
+Making reasoning explicit is argued to be the primary intervention for aligning research practice with scientific integrity (Grant et al., 2022; Malik & Terzidis, 2025).
+
+* **Forcing Function:** Pre-registration and Registered Reports function as bureaucratic "forcing functions" that require researchers to articulate their hypotheses and analysis plans _before_ observing outcomes, thereby "shutting down" tempting degrees of freedom (Belardinelli & Zhu, 2025; Decker et al., 2023; Penders, 2022).
+* **Reflexivity and Positionality:** In qualitative work, "positionality statements" and "reflexivity" allow researchers to make their "subjective reality visible," providing a record of how their values and background influenced the study (Cole et al., 2023; Malik & Terzidis, 2025; Silverstein et al., 2024).
+* **Audit Trails:** "Formal provenance modeling" (e.g., PROV) and "decision trails" create queryable records of how findings were reached, which allows for the detection of "idols of the mind" or systematic errors (Bijak et al., 2022; Koch, 2006).
+* **Standard Operating Procedures (SOPs):** Establishing SOPs for analytic decisions—such as rules for handling missing data—converts tacit habits into transparent, replicable protocols (Datta et al., 2024).
+
+### Practical Accounts of Tacit Knowledge
+
+Sources provide specific accounts of what this tacit knowledge consists of in day-to-day practice:
+
+* **Data Cleaning Heuristics:** Identifying "too fast" responses (e.g., 200ms vs. 2.5% fastest) or specific rules for "salami-slicing" datasets (Article, 2022; van den Akker et al., 2021).
+* **Auxiliary Hypotheses:** Implicit assumptions about physical climate, cultural context, or participant disabilities that are rarely stated in theory but influence outcomes (Nosek et al., 2022).
+* **Intuition-Led Modeling:** In fields like Natural Language Processing, research is often driven by "simple gut feeling" or a "desire to understand the behavior of a model" rather than explicit hypothesis testing (van Miltenburg et al., 2023).
+* **"Invisible Workload":** The unrecorded labor and "internal monologues" researchers use to justify the removal of outliers or the omission of non-significant results (AlHoorie & Hiver, 2021; Hostler, 2023).
+
+### Sources not drawn on:
+
+* **Adjovi (2025):** This bibliometric analysis tracks worldwide production of research on ethics; its scope is too general and does not provide substantive arguments regarding the nature of tacit knowledge.
+* **Lawson et al. (2025):** This study focuses on citational justice and decisions in psychology; while it mentions "problematic citing practices," it does not provide an account of tacit reasoning or researcher degrees of freedom in the context of methodology.
+* **Ng et al. (2024):** This is an audit of CAIM journals regarding open science adoption; it provides metadata on policies but does not explore the underlying epistemology or role of tacit knowledge.
+* **Wacharamanotham et al. (al_2024):** This source focuses on pedagogical models for teaching replications in HCI and does not contribute to the conceptual discussion of tacit knowledge in research practice.
+
+
+
 **Author notes:** *[Flag any sources that connect tacit knowledge to
 reproducibility or to the documentation of research decisions.]*
 
@@ -170,39 +214,39 @@ that an unfamiliar reader understands the procedure.*
 *Q3c: Do any sources include templates, checklists, or worked examples for
 structured research practice? List and describe them.*
 
-### Connections Between Structured Workflows and Epistemic Quality
+### ### Connections Between Structured Workflows and Epistemic Quality
 
-Sources draw explicit connections between structured or documented research workflows and the enhancement of epistemic quality, research integrity, and validity. Pre-registration and Registered Reports are characterized as bureaucratic tools designed to safeguard the scientific process by forcing a clear distinction between prediction (confirmatory research) and postdiction (exploratory research) (Belardinelli & Zhu, 2025; Nosek et al., 2018). This structure is argued to increase the reliability of scientific results by effectively "shutting down" tempting researcher degrees of freedom that might otherwise be exploited to achieve statistical significance (Decker et al., 2023; Penders, 2022). By documenting hypotheses and analysis plans in advance, researchers prevent questionable practices such as $p$-hacking and HARKing, which are identified as primary drivers of the "replication crisis" (AlHoorie & Hiver, 2021; van den Akker et al., 2023).
+Sources explicitly link structured or documented research workflows to enhanced research integrity, credibility, and validity. Pre-registration is described as a bureaucratic tool designed to safeguard the scientific process by distinguishing between prediction and postdiction. This structure is argued to increase the reliability of results by shutting down "tempting degrees of freedom" that researchers might otherwise exploit. By documenting decisions in advance, researchers prevent questionable practices like $p$-hacking and HARKing, which are identified as primary drivers of the replication crisis.
 
-The implementation of "auditable researcher decisions" is presented as a mechanism to transform science from a "trust me" model to one based on verifiable evidence (Grant et al., 2022). For instance, the practice of "showing your work" in its entirety—including intentions and workflows—is argued to facilitate the testing of generalizability and enhance the quality control of published work (Mendes-Da-Silva, 2023). In the context of secondary data analysis, the **Explore and Confirm Analysis Workflow (ECAW)** is proposed as a method that affords protection from researcher bias by making access to a full dataset contingent on the prior registration of an executable analysis script (Workflow team, 2023). Furthermore, formal provenance modeling is argued to provide a structured basis for forming assessments about the quality, reliability, and trustworthiness of research artifacts (Bijak et al., 2022).
+The implementation of "auditable researcher decisions" is presented as a mechanism to transform science from a "trust me" model to one based on verifiable evidence. For instance, "showing your work" in its entirety—including intentions and workflows—facilitates the testing of generalizability and enhances quality control. In secondary data analysis, the **Explore and Confirm Analysis Workflow (ECAW)** is argued to afford protection from researcher bias that conventional pre-registration cannot provide, specifically by making data access contingent on the prior registration of an executable analysis script. Furthermore, formal provenance modeling (e.g., the PROV standard) is argued to provide a structured basis for forming assessments about the quality, reliability, and trustworthiness of a piece of data or finding.
 
-### Protocols and Frameworks for Making Research Reasoning Explicit
+### Protocols and Frameworks for Making Reasoning Explicit
 
-Sources propose several specific protocols and frameworks designed to force the articulation of research reasoning throughout the inquiry process.
+Sources propose several specific protocols and frameworks designed to force the articulation of research reasoning.
 
-* **Explore and Confirm Analysis Workflow (ECAW):** This five-step protocol is designed for secondary data analysis to ensure reasoning is explicit before the full dataset is observed (Workflow team, 2023). First, a research team submits a paragraph describing their intended analysis and a list of variables to a data management organization (Workflow team, 2023). Second, the organization provides access to a small, random subset of the data (e.g., 1,000 out of 10,000 participants) (Workflow team, 2023). Third, the researchers use this subset to prepare and register an executable analysis script (e.g., in R or Stata) (Workflow team, 2023). Fourth, the organization performs a quality check to ensure the script and reasoning are registered (Workflow team, 2023). Finally, the researchers receive access to the full dataset to run the script, with any subsequent deviations being transparently recorded (Workflow team, 2023).
-* **Hybrid AI-Augmented Systematic Literature Review (SLR) Framework:** This framework combines AI’s computational power with human "reflective agency" through five interrelated stages (Malik & Terzidis, 2025). Stage 1 involves "landscaping" and selecting an AI model based on domain specificity and adaptability (Malik & Terzidis, 2025). Stage 2 requires the integration of a curated knowledge base that aligns with the review’s epistemological principles (Malik & Terzidis, 2025). Stage 3 focuses on iterative "prompt engineering," where researchers craft specific instructions to guide the AI’s synthesis (Malik & Terzidis, 2025). Stage 4 involves cyclical validation, using inter-model comparisons and sensitivity testing to ensure reliability (Malik & Terzidis, 2025). Stage 5 is the final deployment of the refined workflow for study selection and communication (Malik & Terzidis, 2025).
-* **Formal Provenance Modeling (PROV):** This standard uses a directed acyclic graph to document the research process, explicitly relating "entities" (e.g., theories, data specifications) to "activities" (e.g., calibration, validation) and "agents" (people or software involved) (Bijak et al., 2022). This creates a queryable, structured record that allows others to trace the reasoning and individual steps leading from an initial observation to a final conclusion (Bijak et al., 2022).
-* **Registered Reports (RR):** This two-stage publishing format splits the peer-review process to emphasize methodological rigor (Silverstein et al., 2023). In Stage 1, researchers submit their background, hypotheses, and detailed analysis plans for review _before_ data collection begins (Silverstein et al., 2023). If accepted, they receive "in-principle acceptance," and in Stage 2, reviewers only evaluate whether the authors adhered to the pre-specified plan and made accurate conclusions based on the resulting evidence (Silverstein et al., 2023).
+* **Explore and Confirm Analysis Workflow (ECAW):** This five-step protocol is designed for secondary data analysis to ensure reasoning is explicit before the full dataset is observed. First, a research team submits a paragraph describing their intended analysis and a list of variables to a data management organization. Second, the organization provides access to a small, random subset of the data. Third, the researchers use this subset to prepare and register an executable analysis script. Fourth, the organization performs a quality check to ensure the script and reasoning are registered. Finally, the researchers receive access to the full dataset to run the script, with any subsequent deviations being transparently recorded.
+* **AI-Augmented Systematic Literature Review (SLR) Framework:** This hybrid framework combines AI’s computational power with human "reflective agency". It consists of five interrelated stages: (1) landscape and select an AI model based on domain specificity; (2) integrate a curated knowledge base that aligns with the review’s epistemological principles; (3) engage in iterative prompt engineering to guide the AI; (4) perform cyclical validation by comparing AI outputs against human-extracted themes; and (5) deploy the refined workflow for study selection and synthesis.
+* **Formal Provenance Modeling (PROV):** This standard uses a directed acyclic graph to document the research process. It explicitly relates "entities" (e.g., theories, data specifications) to "activities" (e.g., calibration, validation) and "agents" (people or software involved). This creates a queryable record that allows others to trace the reasoning and individual steps leading from observation to conclusion.
+* **Registered Reports:** This two-stage publishing format splits the peer-review process. In Stage 1, researchers submit their background, hypotheses, and detailed analysis plans for review _before_ data collection begins. If accepted, they receive an "in-principle acceptance," and in Stage 2, reviewers only evaluate adherence to the plan and the accuracy of the conclusions based on the resulting evidence.
 
 ### Templates, Checklists, and Worked Examples
 
-Sources provide various tools to implement structured research practices across different domains:
+Sources provide various tools to implement structured research practices:
 
-* **Secondary Data Preregistration Template:** A comprehensive 25-question template designed to capture researcher degrees of freedom in existing datasets, including specific prompts for handling outliers and specifying robustness checks (van den Akker et al., 2021).
-* **Transparency and Openness Promotion (TOP) Guidelines:** A modular system consisting of eight standards, including citation standards, data transparency, analytic methods transparency, and study/analysis plan pre-registration (Silverstein et al., 2023).
-* **ODD (Overview, Design concepts, and Details) Protocol:** A standardized protocol for documenting agent-based models; an extension, **ODD+D**, adds a specific focus on documenting researcher "Decisions" (Bijak et al., 2022).
-* **ML Reproducibility Checklist:** A specific checklist for machine learning research that requests information on models, algorithms, theoretical claims, data, and experimental setups (Semmelrock et al., 2025).
-* **PRISMA-ScR:** A checklist specifically for scoping reviews to ensure thorough mapping and reporting of heterogeneous evidence (Cole et al., 2023; Ross-Hellauer et al., 2021).
-* **Replication Recipe:** A template with two parts—pre-completion and post-completion—for conducting high-quality replication studies (van den Akker et al., 2021).
-* **Worked Examples:** van den Akker et al. (2021) provide a full worked example of a secondary data analysis preregistration, including sample answers and guiding comments. Hackett and Strickland (2019) is cited as a worked example of using the "framework approach" to analyze qualitative data through a "decision trail" (Cole et al., 2023).
+* **Secondary Data Preregistration Template:** A comprehensive 25-question template designed to capture researcher degrees of freedom in existing datasets. It includes specific prompts for defining and handling outliers, specifying robustness checks, and disclosing prior knowledge of the data.
+* **Transparency and Openness Promotion (TOP) Guidelines:** A modular system consisting of eight standards: citation standards, data transparency, analytic methods (code) transparency, research materials transparency, design and analysis transparency, study preregistration, analysis plan preregistration, and replication.
+* **ODD (Overview, Design concepts, and Details) Protocol:** A standardized protocol for documenting agent-based models to improve clarity and replication. An extension, **ODD+D**, adds a specific focus on documenting researcher "Decisions".
+* **ML Reproducibility Checklist:** A specific checklist for machine learning research that requests information on models, algorithms, theoretical claims, data, code, and experimental setups.
+* **PRISMA-Scr:** A checklist specifically for scoping reviews to ensure thorough mapping and reporting of heterogeneous evidence.
+* **Replication Recipe:** A template with two parts—pre-completion and post-completion—for conducting high-quality replication studies.
+* **Worked Examples:** Source provides a full worked example of a secondary data analysis preregistration, including example answers and guiding comments. Source provides a worked example of using the "framework approach" to analyze qualitative data through a "decision trail".
 
 ### Sources not drawn on:
 
-* **Adjovi (2025):** This bibliometric analysis of research ethics is too general and does not contribute specific protocols, templates, or substantive arguments regarding structured workflows.
-* **Lawson et al. (2025):** This study focuses specifically on citation practices and "citational justice"; while it mentions researcher degrees of freedom in citing, it does not propose a structured workflow for research methodology or analysis.
-* **Ng et al. (2024):** This is an audit of CAIM journals regarding open science adoption; it provides metadata on policies but does not describe the steps of the protocols or templates themselves.
-* **Administrator (2024):** While it audits reporting practices, it relies on existing guidelines (like STROBE) and does not contribute new frameworks for explicit reasoning.
+* **Adjovi (2025):** This bibliometric analysis of research ethics is too broad and does not provide specific protocols or templates for making reasoning explicit in individual studies.
+* **Lawson et al. (2025):** This study focuses on citation practices and "citational justice"; while it mentions researcher degrees of freedom in citing, it does not propose a structured workflow for methodology or analysis.
+* **Ng et al. (2024):** This is an audit of CAIM journals and provides metadata on the adoption of practices rather than the substantive steps of the protocols themselves.
+* **Administrator (2024):** While it audits reporting practices, it relies on existing guidelines (like STROBE) rather than proposing new frameworks for explicit reasoning.
 
 **Author notes:** *[(a) Sources that make the analogy between structured
 workflows and pre-registration explicitly; (b) sources where this connection
