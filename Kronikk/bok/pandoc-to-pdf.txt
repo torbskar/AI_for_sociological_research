@@ -1,0 +1,1 @@
+pandoc bokforslag-outline.md -o bokforslag-outline.pdf --pdf-engine=xelatex -V geometry:margin=2.5cm -V fontsize=12pt -V papersize=a4 -V documentclass=article -V colorlinks=true -V monofont="DejaVu Sans Mono" --include-in-header=header.tex

@@ -1,6 +1,6 @@
 # Appendix: Supplementary Materials — Illustrative Extracts
 
-The extracts below are illustrative samples from the project's transparency artefacts. They are not exhaustive: the complete replication package — all R and Python scripts, skill configuration files, search logs, session decision records, and NotebookLM prompt templates — is available at [GitHub URL]. Together these materials constitute the transparency artefacts described in the paper: documented, shareable records of the choices made at each stage of the workflow. The extracts are presented in workflow order, from project configuration through literature search, AI tool configuration, synthesis protocol, and session logging.
+The extracts below are illustrative samples from the project's transparency artefacts. They are not exhaustive: the complete replication package — all R and Python scripts, skill configuration files, search logs, session decision records, and NotebookLM prompt templates — is available at https://github.com/torbskar/structured-use-of-AI. Together these materials constitute the transparency artefacts described in the paper: documented, shareable records of the choices made at each stage of the workflow. The extracts are presented in workflow order, from project configuration through literature search, AI tool configuration, synthesis protocol, and session logging.
 
 ---
 
@@ -42,28 +42,28 @@ The root `CLAUDE.md` file functions as the project's standing instruction set �
 
 *Source: `literature/PIPELINE.md`*
 
-The pipeline runs from OpenAlex database query to NotebookLM synthesis export across eight steps. The overview table below shows the full sequence; the two detailed extracts that follow show the human checkpoint at Step 4 and the thematic scoring criteria at Step 7. Human checkpoints (marked ✋) are built into the pipeline design: the workflow halts for manual review before proceeding, ensuring that automated decisions are subject to human verification.
+The pipeline runs from OpenAlex database query to NotebookLM synthesis export across eight steps. The overview table below shows the full sequence; the two detailed extracts that follow show the human checkpoint at Step 4 and the thematic scoring criteria at Step 7. Human checkpoints (marked *[H]*) are built into the pipeline design: the workflow halts for manual review before proceeding, ensuring that automated decisions are subject to human verification.
 
 ### Overview
 
-```
-| Step | Script / action                  | Output                                                    |
-|------|----------------------------------|-----------------------------------------------------------|
-| 1    | search_openalex.R                | literature/automated_literature_searches/combined_results.csv |
-| 2    | filter_results.py --extract      | filter_tidying/filter_candidates.json                     |
-| 3    | screen_candidates.py             | filter_tidying/filter_decisions.json                      |
-| 4    | filter_results.py --apply        | literature/automated_literature_searches/openalex_retained.csv |
-| 4    | ✋ Spot-check excluded            | —                                                         |
-| 5    | download_pdfs.R                  | literature/pdfs/[A–G]/                                    |
-| 5    | ✋ Review missing PDFs            | —                                                         |
-| 6    | rename_pdfs.py --extract/--apply | renamed PDFs                                              |
-| 7    | screen_fulltexts.py              | literature/automated_literature_searches/fulltext_scores.csv |
-| 7b   | populate_upload_folders.py       | literature/notebooklm/upload_theme_[a/b/c]/               |
-| 7b   | ✋ Upload theme folders to NotebookLM | —                                                    |
-| 7c   | ✋ Write search summary report    | literature/automated_literature_searches/search_summary_report.md |
-| 8    | export_notebooklm.py             | literature/notebooklm/notebooklm_export/                  |
-| 8    | ✋ Review composite export        | —                                                         |
-```
+Full file paths are as documented in `literature/PIPELINE.md` in the project repository.
+
+| Step | Script / action | Output |
+|------|-----------------|--------|
+| 1 | `search_openalex.R` | `combined_results.csv` |
+| 2 | `filter_results.py --extract` | `filter_candidates.json` |
+| 3 | `screen_candidates.py` | `filter_decisions.json` |
+| 4 | `filter_results.py --apply` | `openalex_retained.csv` |
+| 4 | *[H]* Spot-check excluded | — |
+| 5 | `download_pdfs.R` | `pdfs/[A–G]/` |
+| 5 | *[H]* Review missing PDFs | — |
+| 6 | `rename_pdfs.py --extract/--apply` | renamed PDFs |
+| 7 | `screen_fulltexts.py` | `fulltext_scores.csv` |
+| 7b | `populate_upload_folders.py` | `notebooklm/upload_[a/b/c]/` |
+| 7b | *[H]* Upload theme folders to NotebookLM | — |
+| 7c | *[H]* Write search summary report | `search_summary_report.md` |
+| 8 | `export_notebooklm.py` | `notebooklm_export/` |
+| 8 | *[H]* Review composite export | — |
 
 ### Step 4 — Apply filter decisions (human checkpoint)
 
@@ -86,28 +86,30 @@ and re-run --apply.
 
 ### Step 7 — Full-text relevance screening
 
-```
-Scores each PDF against three themes using weighted keyword matching on
-strategic page samples (first 3 pages + middle 2 pages + last 2 pages).
+Scores each PDF against three themes using weighted keyword matching on strategic page samples (first 3 pages + middle 2 pages + last 2 pages).
 
-Themes:
-| Theme | Description                                                    |
-|-------|----------------------------------------------------------------|
-| A     | Structured / systematic AI use in research practice            |
-| B     | Explicit reasoning, pre-registration, open science, tacit knowledge |
-| C     | Journal and publication policy on AI                           |
+**Themes:**
 
-Parameters:
-| Parameter | Default | Notes                                  |
-|-----------|---------|----------------------------------------|
-| --top-n   | 75      | Papers per theme CSV                   |
-| --pdf-dir | literature/pdfs | Source PDF directory           |
+| Theme | Description |
+|-------|-------------|
+| A | Structured / systematic AI use in research practice |
+| B | Explicit reasoning, pre-registration, open science, tacit knowledge |
+| C | Journal and publication policy on AI |
 
-What to check: Open fulltext_report.md for an overview. Then open each theme
-CSV — the hits_[a/b/c] column shows which terms triggered the score, which
-helps identify false positives (high-scoring papers that are not actually
-relevant).
-```
+**Parameters:**
+
+| Parameter | Default | Notes |
+|-----------|---------|-------|
+| `--top-n` | 75 | Papers per theme CSV |
+| `--pdf-dir` | `literature/pdfs` | Source PDF directory |
+
+What to check: Open `fulltext_report.md` for an overview. Then open each theme CSV — the `hits_[a/b/c]` column shows which terms triggered the score, which helps identify false positives (high-scoring papers that are not actually relevant).
+
+### Implementation for this paper
+
+Three keyword searches were conducted using pre-specified boolean strings in OpenAlex via the `openalexR` package in R (Massimo et al., 2024), covering three topics: A) "Structured AI use in research practice"; B) "Explicit reasoning, pre-registration, open science"; and C) "Journal and publication policy on AI". This yielded 1,479 hits, of which 1,407 were retained after first screening of titles and abstracts. 1,205 full-text articles were successfully downloaded and screened. Full-text screening produced a ranked shortlist; the top-scored articles were loaded into NotebookLM for grounded synthesis (topic A: 48, topic B: 49, topic C: 46). Articles not retrievable by automation: the ten highest-ranked titles within each topic were manually located and added to the notebooks. A structured synthesis for each topic was exported from NotebookLM. A parallel semantic search using Elicit.com produced topic-level reports retained alongside the NotebookLM synthesis outputs as drafting materials.
+
+Human verification took two forms: the top-scored papers were read independently of the AI synthesis, with discrepancies flagged and investigated; and synthesis outputs were cross-checked against the cited sources. All search strings, screening criteria, relevance scores, and synthesis queries are available in the project repository.
 
 ---
 
@@ -378,16 +380,43 @@ The git commit hash links each version record to the exact state of all configur
 
 ---
 
+## H. Full project folder structure
+
+*Source: project root (agentic AI configuration)*
+
+The simplified folder tree in the paper's workflow section shows only the content folders. The full structure below adds the configuration files used in an agentic AI setup (Claude Code). Subfolder context files are omitted here; they follow the same pattern as the root file and are available in the project repository.
+
+```
+project/
+├── CLAUDE.md         ← project context; loaded automatically at session start
+├── .claudedocs/      ← persistent cross-project instructions (style, epistemological commitments)
+├── .claudeignore     ← paths excluded from AI context (data/raw/, credentials, git metadata)
+├── .gitignore        ← paths excluded from version control (bulk PDFs, local AI state)
+├── .git/             ← version control; commit history timestamps all file changes
+├── data/
+│   ├── raw/          ← original data; never AI-readable; immutable after receipt
+│   └── processed/    ← analysis-ready files; script-generated only
+├── scripts/          ← analysis code (R, Python, Stata)
+├── outputs/          ← tables and figures; reproducible from scripts
+├── literature/       ← search logs, source sets, syntheses
+├── notes/            ← working notes and argument sketches
+├── draft/            ← manuscript versions with full edit history
+├── logs/             ← session decision logs and author-input files
+└── supplementary/    ← replication package materials
+```
+
+Researchers using chat-only interfaces implement the same functions manually: the project context is pasted at session start rather than loaded automatically; access controls are maintained by folder discipline rather than enforced by the tool; and version control requires an explicit commit step rather than automatic tracking. The full agentic configuration, including `.claudeignore` specifications and the session-start protocol, is documented in the project repository at https://github.com/torbskar/structured-use-of-AI.
+
+---
+
 ## F. Log index
 
 *Source: `logs/log-index.md`*
 
-The log index maintains a running four-column table linking each session's decision log, author-input file, and claude-contribution file to a one-line summary of the key decisions. Three rows are reproduced below; the full index covers all sessions from project initiation through final drafting.
+The log index maintains a running table linking each session date to a one-line summary of key decisions. Each date has three associated files: a decision log, an author-input file, and a claude-contribution file, all named by date. Three rows are reproduced below; the full index covers all sessions from project initiation through final drafting.
 
-```
-| Date       | Decision log    | Author-input                  | Claude-contribution                  | Key decisions |
-|------------|-----------------|-------------------------------|--------------------------------------|---------------|
-| 2026-04-04 | 2026-04-04.md   | 2026-04-04-author-input.md    | 2026-04-04-claude-contribution.md    | Paper type; target journal; core distinction; file structure; logging convention; CSV format; three-stage screening protocol; naming convention; lit-screen skill; string A screened (309→211); string B exported |
-| 2026-04-05 | 2026-04-05.md   | 2026-04-05-author-input.md    | 2026-04-05-claude-contribution.md    | OpenAlex replaces Scopus/WoS (legal); query authorship argument developed; target journal changed to Sociological Science; replication package fit identified; full pipeline run Steps 1–8: 1,133 records → 1,073 retained → 558 PDFs → 503 screened → 300 exported; PIPELINE.md written; NotebookLM configs and report templates A/B/C written |
-| 2026-04-23 | 2026-04-23.md   | 2026-04-23-author-input.md    | 2026-04-23-claude-contribution.md    | research-project-setup skill created; logging system extended with claude-contribution file; log-index updated to four columns |
-```
+| Date | Key decisions |
+|------|---------------|
+| 2026-04-04 | Paper type; target journal; core distinction; file structure; logging convention; three-stage screening protocol; lit-screen skill; string A screened (309→211) |
+| 2026-04-05 | OpenAlex replaces Scopus/WoS; query authorship argument developed; target journal set to *Sociological Science*; full pipeline run (1,133 records → 300 exported); PIPELINE.md written; NotebookLM templates written |
+| 2026-04-23 | research-project-setup skill created; logging system extended with claude-contribution file; log-index updated to four columns |
