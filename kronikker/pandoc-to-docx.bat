@@ -1,1 +1,0 @@
-pandoc khrono_kronikk_v3.md  -o khrono_kronikk.docx  
