@@ -63,8 +63,10 @@ Vi må starte tidlig: finne ut hvilke ferdigheter og verktøy som skal introduse
 og bygge dette inn i studieprogrammene fra første semester. Særlig innenfor humaniora og
 samfunnsvitenskap, der slik infrastruktur i liten grad er innarbeidet i studiene, er dette arbeid som ikke kan vente. Det finnes allerede gode initiativ for å lære studenter og ansatte grunnleggende *bruk* av KI — men systematikk og etterprøvbarhet er så langt et hull i den opplæringen.
 
-I en artikkel nettopp lagt ut på SocArXiv foreslår jeg et grunnleggende rammeverk for
-systematisk og dokumentert KI-bruk i forskning og akademisk skriving, men prinsippene er i stor grad overførbare til undervisning og eksamen. Den debatten vi trenger nå er ikke om vi skal bruke KI, men hvordan slike rammeverk bør se ut og implementeres, hvilken kompetanse de krever av både lærere og studenter, og hvordan institusjonene bør tilrettelegge. [SOCARXIV-LENKE]
+Debatten om prosess fremfor produkt — om å vurdere tankerekkene bak teksten snarere enn sluttproduktet — er i gang. Det som mangler er et klarere begrep om hva systematikk faktisk innebærer i faglig praksis, og hvordan det kan dokumenteres og vurderes.
+
+I en artikkel nettopp lagt ut på [SocArXiv](https://osf.io/preprints/socarxiv/5vxt2_v1) foreslår jeg et grunnleggende rammeverk for
+systematisk og dokumentert KI-bruk i forskning og akademisk skriving, men prinsippene er i stor grad overførbare til undervisning og eksamen. Den debatten vi trenger nå er ikke om vi skal bruke KI, men hvordan slike rammeverk bør se ut og implementeres, hvilken kompetanse de krever av både lærere og studenter, og hvordan institusjonene bør tilrettelegge. 
 
 ---
 

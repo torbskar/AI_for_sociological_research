@@ -1,1 +1,1 @@
-pandoc v6-draft.md -o v6-draft.pdf --pdf-engine=xelatex -V geometry:margin=2.5cm -V fontsize=12pt -V papersize=a4 -V documentclass=article -V colorlinks=true -V monofont="DejaVu Sans Mono" --include-in-header=header.tex
+pandoc v6_draft_socarxiv.md -o v6_draft_socarxiv.pdf --pdf-engine=xelatex -V geometry:margin=2.5cm -V fontsize=12pt -V papersize=a4 -V documentclass=article -V colorlinks=true -V monofont="DejaVu Sans Mono" --include-in-header=header.tex

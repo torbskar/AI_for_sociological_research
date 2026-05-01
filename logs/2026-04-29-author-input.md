@@ -1,0 +1,11 @@
+# Author input: 2026-04-29
+
+Today I brought a newly published Khrono-kronikk by Tor W. Andreassen to check whether it overlapped problematically with my own kronikk, which is ready for submission. I identified the specific article and URL myself and framed the question: is there something here I need to relate to directly? The question was mine — I was uncertain whether the pieces would be too similar to submit to the same venue.
+
+I also flagged a known gap in the manuscript: the Hindawi/Wiley 8000+ retraction figure is currently unsourced. I identified the Retraction Watch article from December 2023 as the likely best source and provided the URL, but deferred verification to a later session.
+
+In the second part of today's work I directed attention to a specific gap in the draft: the writing-as-thinking argument around the drafting stage was thin and lacked theoretical grounding for the claim that writing configurations and prompts is itself a form of cognitive work. I identified the NotebookLM source file (`writingThinking.txt`) as the relevant material to draw on and asked for a note assessing those sources.
+
+After reviewing the note and the subsequent NotebookLM Q&A results, I made the source selection decisions: Emig and Sommers as the primary sources (Emig for the mechanism of deliberate semantics, Sommers for the polishing-vs-discovery framing), Quitadamo & Kurtz alongside Prain & Hand as empirical backing. I explicitly excluded Donnelly and Warner — Donnelly because the citation count is too low to carry argumentative weight, Warner because the source is a YouTube video and not needed given what the peer-reviewed sources already provide.
+
+The structural idea — introducing these sources first in the unsystematic use section as a critique, then invoking them again in the drafting section to support systematic use — was mine. I had been thinking that the polishing-without-discovery framing fits the unsystematic use critique very directly, and that Sommers' formulation "finding a structure is a strategy for finding meaning" supports the specification work argument well. I also confirmed that the Retraction Watch URL carries the 8000+ figure and instructed that the reference be added.
