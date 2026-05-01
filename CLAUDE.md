@@ -2,9 +2,9 @@
 
 ## Project overview
 
-This paper argues for a principled distinction between *structured* and *unstructured* AI use in academic research, develops a practical workflow implementing structured use across the full research process, and draws implications for journal policy. The target journal is **Sociological Science** (open access, Diamond OA).
+This paper argues for a principled distinction between *structured* and *unstructured* AI use in academic research, develops a practical workflow implementing structured use across the full research process, and draws implications for journal policy. Target journal to be determined.
 
-The paper is both descriptive (here is a workflow) and softly normative (structured use is epistemically and ethically preferable to unstructured use, and current journal policies do not make this distinction). It must be framed as a **methodological contribution**, not a commentary — Sociological Science expects substantive sociological scholarship, not opinion pieces.
+The paper is both descriptive (here is a workflow) and softly normative (structured use is epistemically and ethically preferable to unstructured use, and current journal policies do not make this distinction). It must be framed as a **methodological contribution**, not a commentary — the target journal expects substantive sociological scholarship, not opinion pieces.
 
 ## Core argument
 
@@ -51,7 +51,7 @@ Folder-specific protocols (logging, draft versioning, notes archiving, literatur
 
 **Session-start protocol**: see `logs/CLAUDE.md`. Run it at the start of every session before any other work.
 
-## Target journal requirements (Sociological Science)
+## Target journal requirements
 
 - Diamond open access (no APC)
 - **No word limit** — but brevity is explicitly valued and long literature reviews are discouraged. Keep the literature review section short and concise; the extensive background work feeds the argument, not the prose.
@@ -77,5 +77,5 @@ Folder-specific protocols (logging, draft versioning, notes archiving, literatur
 - Treating the workflow as universally applicable (scope it to sociology and adjacent fields)
 - Making the journal policy critique the main event — it is an implication, not the thesis
 - Generic "AI is changing everything" framing in the introduction
-- Long literature review sections — Sociological Science explicitly discourages them
+- Long literature review sections — the target journal explicitly discourages them
 - Commentary or opinion-piece tone — must read as methodological scholarship

@@ -2,7 +2,7 @@
 
 **Status**: Working outline — updated 2026-04-21  
 **Last updated**: 2026-04-21  
-**Target**: Sociological Science — methodological contribution
+**Target**: Open-access sociology journal (TBD) — methodological contribution
 
 ---
 
@@ -54,7 +54,7 @@ The argument must be tool-agnostic throughout. The structured/unstructured disti
 
 ## 2. AI in research: the existing literature and the gap
 
-**Function**: Brief literature grounding — not a survey. Maps what exists, names the gap, and positions the paper's contribution. Keep short; Sociological Science discourages long literature reviews.
+**Function**: Brief literature grounding — not a survey. Maps what exists, names the gap, and positions the paper's contribution. Keep short; the target journal discourages long literature reviews.
 
 **Note**: The literature in this section was identified using the systematic pipeline described in §4. The search strings, screening decisions, and relevance scores are documented in the supplementary materials. No self-referential commentary on this in the text — the documentation itself serves as the demonstration.
 
@@ -191,7 +191,7 @@ The review stage has three components. They are cumulative — each addresses a 
 - **Version tracking**: Run `bash scripts/log_session_meta.sh` at each session start. Appends to `logs/version-log.md` only when the Claude Code CLI version or configured model changes. Captures: CLI version, model identifier, git commit hash. This creates an audit trail of exactly which tool versions were used across the project's lifetime — essential for reproducibility given that AI tools update silently. Note the limitation: version logging documents the observable identifiers but cannot capture internal model weight changes within a version (that would require a locally deployed, pinned model). This limitation should be stated at point of relevance.
 - All transparency artefacts compiled as supplementary material
 - Include logging of which model is used, version pinning
-- Sociological Science's mandatory replication package requirement: prompt templates, skill files, R scripts, search logs serve as the replication package — strong fit. The supplementary materials for a non-empirical methods paper are themselves a demonstration of the argument: structured use produces replication-ready materials as a natural byproduct. This is not additional overhead.
+- Mandatory replication package requirement: prompt templates, skill files, R scripts, search logs serve as the replication package — strong fit. The supplementary materials for a non-empirical methods paper are themselves a demonstration of the argument: structured use produces replication-ready materials as a natural byproduct. This is not additional overhead.
 - **Two-tier documentation structure**: Working logs (daily session logs + author-input files) and final supplementary materials serve distinct functions. The logs document the process as it happened — iterative, with decisions revised and refined — and carry the evidentiary weight for process integrity, analogous to a lab notebook. The supplement presents the end-state artefacts in reusable, accessible form: what another researcher would need to adopt or verify the workflow. Both are present in the replication package; the paper should be explicit that they serve different purposes. [This mirrors how pre-registration works: the registered plan and the final methods section are both legitimate and neither substitutes for the other]
 - **Author-input logs and authorship transparency**: The author-input files document what the author brought to each session — ideas, framings, redirections, pushbacks — in first-person prose. These serve a function analogous to authorship declarations in co-authored work: they document the human intellectual origin of the work and the human-AI division of labour. For this paper specifically, demonstrating this practice is the point. More generally, structured AI use with author-input logging enables transparent CRediT-style declarations of what was done by whom.
 
@@ -272,7 +272,7 @@ The review stage has three components. They are cumulative — each addresses a 
 ### 6.3 A documentation-based alternative
 
 - The relevant policy question is not "did you use AI?" but "can you show what you did?"
-- **The conservative framing**: Extending existing replication package norms to AI-assisted workflows requires no new principle and no new infrastructure — only an expanded understanding of what "the materials needed to reproduce the analysis" includes. For a study using regression, that means code and data. For a study using a structured AI workflow, that means skill files, prompt templates, search scripts, and screening logs. Journals that already require replication packages for quantitative work (Sociological Science since April 2023) have accepted the underlying logic; they have no principled basis for treating AI workflow documentation differently. This makes the policy recommendation conservative rather than radical.
+- **The conservative framing**: Extending existing replication package norms to AI-assisted workflows requires no new principle and no new infrastructure — only an expanded understanding of what "the materials needed to reproduce the analysis" includes. For a study using regression, that means code and data. For a study using a structured AI workflow, that means skill files, prompt templates, search scripts, and screening logs. Journals that already require replication packages for quantitative work have accepted the underlying logic; they have no principled basis for treating AI workflow documentation differently. This makes the policy recommendation conservative rather than radical.
 - Jones (2025, qualitative) and Davidson & Karell (2025, SMR) move in this direction — disclosure frameworks that specify *what* was done, not just *whether*
 - This shifts the evaluative burden to peer review, where it belongs: reviewers can assess whether the structured process was appropriate, not just whether AI was used
 
@@ -298,7 +298,7 @@ Five points must be present; see `notes/conclusion-requirements.md` for detail.
 
 ## Supplementary materials (replication package)
 
-Sociological Science requires a replication package as a condition of publication (mandatory since April 2023), normally understood as statistical code and data. For this paper, the transparency artefacts of the structured workflow serve the equivalent function — and the paper should say so explicitly in the methods section. This is not a workaround but a demonstration of the argument: structured use produces replication-ready materials as a natural byproduct.
+The transparency artefacts of the structured workflow serve as the replication package — and the paper should say so explicitly in the methods section. This is not a workaround but a demonstration of the argument: structured use produces replication-ready materials as a natural byproduct.
 
 **Two-tier structure**: The package contains both working logs (process integrity evidence) and final artefacts (replicability evidence). These serve distinct functions and should be clearly labelled as such in the package documentation.
 

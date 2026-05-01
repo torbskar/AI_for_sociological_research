@@ -418,5 +418,5 @@ The log index maintains a running table linking each session date to a one-line 
 | Date | Key decisions |
 |------|---------------|
 | 2026-04-04 | Paper type; target journal; core distinction; file structure; logging convention; three-stage screening protocol; lit-screen skill; string A screened (309→211) |
-| 2026-04-05 | OpenAlex replaces Scopus/WoS; query authorship argument developed; target journal set to *Sociological Science*; full pipeline run (1,133 records → 300 exported); PIPELINE.md written; NotebookLM templates written |
+| 2026-04-05 | OpenAlex replaces Scopus/WoS; query authorship argument developed; target journal selected; full pipeline run (1,133 records → 300 exported); PIPELINE.md written; NotebookLM templates written |
 | 2026-04-23 | research-project-setup skill created; logging system extended with claude-contribution file; log-index updated to four columns |
