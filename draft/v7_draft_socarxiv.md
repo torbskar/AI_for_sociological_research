@@ -821,7 +821,7 @@ The log index maintains a running table linking each session date to a one-line 
 | 2026-04-05 | OpenAlex replaces Scopus/WoS; query authorship argument developed; target journal selected; full pipeline run (1,133 records → 300 exported); PIPELINE.md written; NotebookLM templates written |
 | 2026-04-23 | research-project-setup skill created; logging system extended with claude-contribution file; log-index updated to four columns                                                                                       |
 
-[^1]: The replication package for this paper consists of workflow artefacts — skill files, prompt templates, search scripts, screening logs, and author-input files — rather than statistical code and data. This is submitted as a methodological contribution to a journal whose mandatory replication package requirement (introduced April 2023) is itself an instance of the documentation norm the paper argues for.
+[^1]: The replication package for this paper consists of workflow artefacts — skill files, prompt templates, search scripts, screening logs, and author-input files — rather than statistical code and data. This is submitted as a methodological contribution to a journal whose open science policy (requiring openly accessible code and materials for all manuscripts submitted from June 2025) is itself an instance of the documentation norm the paper argues for.
 
 [^2]: [ICMJE | Recommendations | Defining the Role of Authors and Contributors](https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html)
 

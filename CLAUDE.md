@@ -2,9 +2,9 @@
 
 ## Project overview
 
-This paper argues for a principled distinction between *structured* and *unstructured* AI use in academic research, develops a practical workflow implementing structured use across the full research process, and draws implications for journal policy. Target journal to be determined.
+This paper argues for a principled distinction between *structured* and *unstructured* AI use in academic research, develops a practical workflow implementing structured use across the full research process, and draws implications for journal policy. Target journal: ***Sociological Methods & Research* (SMR)**, published by SAGE.
 
-The paper is both descriptive (here is a workflow) and softly normative (structured use is epistemically and ethically preferable to unstructured use, and current journal policies do not make this distinction). It must be framed as a **methodological contribution**, not a commentary — the target journal expects substantive sociological scholarship, not opinion pieces.
+The paper is both descriptive (here is a workflow) and softly normative (structured use is epistemically and ethically preferable to unstructured use, and current journal policies do not make this distinction). It must be framed as a **methodological contribution**, not a commentary — SMR publishes original research and methods contributions, not opinion pieces.
 
 ## Core argument
 
@@ -51,18 +51,18 @@ Folder-specific protocols (logging, draft versioning, notes archiving, literatur
 
 **Session-start protocol**: see `logs/CLAUDE.md`. Run it at the start of every session before any other work.
 
-## Target journal requirements
+## Target journal requirements (*Sociological Methods & Research*, SAGE)
 
-- Diamond open access (no APC)
-- **No word limit** — but brevity is explicitly valued and long literature reviews are discouraged. Keep the literature review section short and concise; the extensive background work feeds the argument, not the prose.
-- Abstract: 150 words maximum
-- All sociological scholarship types welcomed, including novel theoretical ideas without empirical results
-- **Replication package mandatory** (since April 2023): must submit statistical code and data sufficient to reproduce reported results as condition of publication. For this paper, the transparency artefacts (prompt templates, skill files, R scripts, search logs) serve as the replication package — this is a strong fit and should be noted explicitly in the methods section.
-- Qualitative work: data analysis methods must be documented; anonymity and consent disclosures required
-- Quantitative work: substantive effect sizes over statistical significance; graphical displays preferred; control variable tables in appendices
-- No explicit AI policy — consistent with the paper's argument that current policies are underdeveloped
-- Follows COPE Code of Conduct; CrossCheck/iThenticate similarity screening applies
-- Check current author guidelines and Manuscript Preparation page before submission
+- **Subscription journal** with open access options (not Diamond OA); SAGE transformative agreements may apply
+- **Word limit: 10,000 words**, including references and tables — a binding constraint; keep the draft tight
+- **Abstract**: structured abstract required; exact word limit not confirmed — verify before submission
+- Original research and methodological contributions; no empirical results required for methods papers
+- **Open Science Policy** (applies to all manuscripts submitted after June 1, 2025): data, code, and materials must be openly accessible; authors must provide anonymised code and materials at submission for peer review; replication package in a trusted public repository required. For this paper, the transparency artefacts (prompt templates, skill files, R scripts, search logs) serve as the replication package — note explicitly in the methods section.
+- **AI policy (SAGE)**: distinguishes *assistive* AI (grammar, language, structure — no disclosure required) from *generative* AI (content affecting methodology, analysis, results — must be disclosed in the methods or acknowledgements section). LLMs cannot be listed as authors. Undisclosed generative AI use can trigger rejection at any stage. This paper's structured AI use falls under the generative category and must be disclosed — the methods section is the natural location and a direct instantiation of the paper's argument.
+- **Critique note**: SAGE's policy is more nuanced than a blanket ban but still does not distinguish structured from unstructured generative AI use — the paper's critique applies at this level, not at the assistive/generative level. The concessive move in §6 must acknowledge the SAGE policy's sophistication before pressing the argument.
+- Double-blind peer review; submitted via ScholarOne Manuscripts (mc.manuscriptcentral.com/smr)
+- Follows COPE Code of Conduct; iThenticate/CrossCheck similarity screening applies
+- Verify current author guidelines and abstract format before submission
 
 ## What this paper is NOT
 
@@ -77,5 +77,5 @@ Folder-specific protocols (logging, draft versioning, notes archiving, literatur
 - Treating the workflow as universally applicable (scope it to sociology and adjacent fields)
 - Making the journal policy critique the main event — it is an implication, not the thesis
 - Generic "AI is changing everything" framing in the introduction
-- Long literature review sections — the target journal explicitly discourages them
+- Long literature review sections — SMR has a 10,000-word limit (including references); every word counts
 - Commentary or opinion-piece tone — must read as methodological scholarship
