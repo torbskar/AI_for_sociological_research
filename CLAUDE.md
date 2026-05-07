@@ -1,25 +1,26 @@
-# CLAUDE.md — Project: Structured AI Use in Sociological Research
+# CLAUDE.md — Project: Structured AI Use in Social Science Research
 
 ## Project overview
 
-This paper argues for a principled distinction between *structured* and *unstructured* AI use in academic research, develops a practical workflow implementing structured use across the full research process, and draws implications for journal policy. Target journal: ***Sociological Methods & Research* (SMR)**, published by SAGE.
+This paper argues for a principled distinction between *systematic* and *unsystematic* AI use in academic research, develops a practical workflow implementing systematic use across the full research process, and draws implications for journal policy. Target journal: ***Social Epistemology: A Journal of Knowledge, Culture and Policy***, published by Taylor & Francis (Routledge).
 
-The paper is both descriptive (here is a workflow) and softly normative (structured use is epistemically and ethically preferable to unstructured use, and current journal policies do not make this distinction). It must be framed as a **methodological contribution**, not a commentary — SMR publishes original research and methods contributions, not opinion pieces.
+The paper is both descriptive (here is a workflow) and argumentative (systematic use is epistemically preferable to unsystematic use, and current journal policies do not make this distinction). It is framed as a **conceptual and argumentative contribution to the epistemology of research practice** — Social Epistemology publishes interdisciplinary philosophical and social-scientific work on the production, assessment, and validation of knowledge, which is precisely this paper's register. It is not a methods paper and should not be written as one.
 
 ## Core argument
 
-1. The structured/unstructured distinction — not AI use versus non-use — is the epistemically relevant axis for policy.
-2. Structured AI use forces explicit articulation of tacit research decisions, functioning analogously to pre-registration.
+1. The systematic/unsystematic distinction — not AI use versus non-use — is the epistemically relevant axis for policy.
+2. Systematic AI use forces explicit articulation of tacit research decisions, functioning analogously to pre-registration.
 3. This produces transparency artefacts (prompt templates, skill configurations, search logs) that are open-science compatible.
-4. Current journal policies are blunt instruments that inadvertently penalise good practice.
-5. A documentation-based policy framework is preferable to blanket restriction or blanket permission.
+4. Current journal policies, even the more sophisticated tiered approaches, organise disclosure along the wrong axis — what was used and whether it was disclosed, rather than whether the process was epistemically sound.
+5. A documentation-based framework, organised around the systematic/unsystematic distinction, is the appropriate instrument — and existing replication-package infrastructure already supports it.
 
 ## Key conceptual distinctions (use consistently throughout)
 
-- **Structured use**: tool configurations with explicit criteria, built-in human verification at each stage, documented outputs
-- **Unstructured use**: accepting AI outputs without systematic verification or explicit criteria
+- **Systematic use**: tool configurations with explicit criteria, built-in human verification at each stage, documented outputs
+- **Unsystematic use**: accepting AI outputs without explicit criteria, verification, or documentation
+- **Query authorship**: the intellectual contribution in AI-assisted research resides in the query — search criteria, screening rubrics, analytical specifications, reviewer configurations — not in the generated text
 - **Skills / reviewer skills**: configured AI personas with discipline-specific review criteria
-- **Transparency artefacts**: prompt templates, skill files, search logs, NotebookLM source sets — shareable as supplementary materials
+- **Transparency artefacts**: prompt templates, skill files, search logs, session records — shareable as documentation package / replication materials
 
 ## Writing instructions
 
@@ -30,7 +31,7 @@ The paper is both descriptive (here is a workflow) and softly normative (structu
 - Concessive moves required before any critique of journal policies or existing AI guidance
 - Scope limitations stated at point of relevance, not batched
 - Literature review in the paper itself must be **short and concise** — cite to support claims, do not survey. The extensive background work done here feeds the argument, not the prose.
-- Frame consistently as a **methodological contribution**: the paper demonstrates a workflow, argues for its epistemic properties, and draws policy implications. It is not a think-piece or a commentary.
+- Frame consistently as a **conceptual and argumentative contribution to the epistemology of research practice**: the paper demonstrates a workflow, argues for its epistemic properties, and draws policy implications. The audience is philosophers, science studies researchers, and social epistemologists — not primarily methods specialists. The argument must be philosophically credible, not just practically useful.
 
 ## File structure
 
@@ -51,18 +52,28 @@ Folder-specific protocols (logging, draft versioning, notes archiving, literatur
 
 **Session-start protocol**: see `logs/CLAUDE.md`. Run it at the start of every session before any other work.
 
-## Target journal requirements (*Sociological Methods & Research*, SAGE)
+## Target journal requirements (*Social Epistemology*, Taylor & Francis)
 
-- **Subscription journal** with open access options (not Diamond OA); SAGE transformative agreements may apply
-- **Word limit: 10,000 words**, including references and tables — a binding constraint; keep the draft tight
-- **Abstract**: structured abstract required; exact word limit not confirmed — verify before submission
-- Original research and methodological contributions; no empirical results required for methods papers
-- **Open Science Policy** (applies to all manuscripts submitted after June 1, 2025): data, code, and materials must be openly accessible; authors must provide anonymised code and materials at submission for peer review; replication package in a trusted public repository required. For this paper, the transparency artefacts (prompt templates, skill files, R scripts, search logs) serve as the replication package — note explicitly in the methods section.
-- **AI policy (SAGE)**: distinguishes *assistive* AI (grammar, language, structure — no disclosure required) from *generative* AI (content affecting methodology, analysis, results — must be disclosed in the methods or acknowledgements section). LLMs cannot be listed as authors. Undisclosed generative AI use can trigger rejection at any stage. This paper's structured AI use falls under the generative category and must be disclosed — the methods section is the natural location and a direct instantiation of the paper's argument.
-- **Critique note**: SAGE's policy is more nuanced than a blanket ban but still does not distinguish structured from unstructured generative AI use — the paper's critique applies at this level, not at the assistive/generative level. The concessive move in §6 must acknowledge the SAGE policy's sophistication before pressing the argument.
-- Double-blind peer review; submitted via ScholarOne Manuscripts (mc.manuscriptcentral.com/smr)
-- Follows COPE Code of Conduct; iThenticate/CrossCheck similarity screening applies
-- Verify current author guidelines and abstract format before submission
+Author instructions page: https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=tsep20
+
+- **Full title**: *Social Epistemology: A Journal of Knowledge, Culture and Policy*, Taylor & Francis (Routledge)
+- **Scope**: Interdisciplinary forum for philosophical and social-scientific enquiry on the production, assessment, and validation of knowledge — both empirical and normative. Audience includes philosophers, sociologists, psychologists, cultural historians, science studies scholars, political theorists, and education researchers. The "Policy" in the subtitle means policy implications are within the journal's core remit, not peripheral.
+- **Word limit**: 6,000–8,000 words, inclusive of tables, references, figure/table captions, and endnotes. Include a word count with submission.
+- **Abstract**: Unstructured paragraph, 200 words maximum.
+- **Keywords**: 3–4 keywords.
+- **Language**: British English throughout (behaviour not behavior; -ise not -ize; etc.).
+- **Manuscript structure**: title page; abstract; keywords; main text; acknowledgments; declaration of interest; references; appendices (if any). The journal's boilerplate lists a biomedical IMRaD structure, which does not apply to conceptual/argumentative pieces.
+- **Style**: Single quotation marks; long quotations indented without marks; no semicolons where avoidable; em dashes used sparingly; active voice; gender-neutral language; do not address the reader directly. No serial comma requirement stated; use consistently.
+- **Format**: Times New Roman 12pt, double-line spacing, margins ≥ 2.5cm. Figures submitted separately (TIFF/JPEG/PS, 300 dpi colour / 600 dpi grayscale / 1200 dpi line art).
+- **Biographical note**: Up to 200 words per author.
+- **Reference format**: Chicago author-date, 17th edition (2017). T&F style guide confirmed: journal articles as `Surname, Given. yyyy. "Article Title." *Journal Title* vol (issue): pp–pp. https://doi.org/DOI.`; books as `Surname, Given. yyyy. *Book Title*. City: Publisher.`; two-author entries use "and" before second author in both citations and reference list; no en-dash replacement for repeated author names; hanging indent throughout. DOIs for published journal articles will be added by T&F production — authors do not need to include them in manuscript submissions (though including them is harmless).
+- **Peer review**: Anonymised blind review; initial editor screening.
+- **Open access**: APC-based open access available; institutional T&F agreements may apply. Verify current APC.
+- **Data sharing**: T&F Basic Data Sharing Policy — authors encouraged (not required) to deposit data and provide a Data Availability Statement. The transparency artefacts (prompt templates, skill files, search scripts, session logs) serve as the documentation package; depositing these in a recognised repository and citing the DOI satisfies this policy and is a direct instantiation of the paper's argument.
+- **AI policy (Taylor & Francis)**: All generative AI use must be disclosed in the Methods or Acknowledgements section. Required disclosure elements: full tool name, version number, how it was used, reason for use. AI cannot be listed as author. Authors remain accountable for accuracy, validity, and integrity of AI-assisted content. T&F does not distinguish assistive from generative AI — all generative AI requires specific disclosure. This paper's systematic AI use must be disclosed; the methods section (documentation package description) is the natural location and a direct instantiation of the paper's argument.
+- **Critique note**: T&F's policy requires disclosure and author accountability but does not distinguish systematic from unsystematic generative AI use — the paper's critique applies at this level. The concessive move in the policy section must acknowledge T&F's disclosure requirement as a genuine step before pressing the systematic/unsystematic argument.
+- **Submission system**: Taylor & Francis online portal (ScholarOne); verify exact submission URL from IFA.
+- Follows COPE Code of Conduct; similarity screening applies.
 
 ## What this paper is NOT
 
@@ -74,8 +85,8 @@ Folder-specific protocols (logging, draft versioning, notes archiving, literatur
 ## Key things to avoid in drafting
 
 - Overstating the reliability of AI outputs
-- Treating the workflow as universally applicable (scope it to sociology and adjacent fields)
+- Treating the workflow as universally applicable (scope it to the social sciences, not all academic disciplines)
 - Making the journal policy critique the main event — it is an implication, not the thesis
 - Generic "AI is changing everything" framing in the introduction
-- Long literature review sections — SMR has a 10,000-word limit (including references); every word counts
-- Commentary or opinion-piece tone — must read as methodological scholarship
+- Long literature review sections — the word limit is 6,000–8,000 words inclusive of references; every word counts
+- Commentary or opinion-piece tone — must read as philosophically credible scholarship

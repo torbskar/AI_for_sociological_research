@@ -1,4 +1,4 @@
-# Outline: Systematic AI Authorship in Sociological Research
+# Outline: Systematic AI Authorship in Social Science Research
 
 **Status**: Working outline — updated 2026-04-21  
 **Last updated**: 2026-04-21  
@@ -40,15 +40,15 @@ The argument must be tool-agnostic throughout. The structured/unstructured disti
 **The paper's move:**
 
 - The binary (AI use / no AI use) misidentifies the epistemically relevant dimension. What matters is not whether AI was used but whether it was used *systematically* — embedded in explicit criteria, human verification at each stage, documented outputs. This is where the real leverage lies.
-- Hallucinated citations as misconduct (Accountability in Research): citations function as data in social science disciplines, so AI-induced citation errors are direct contamination of the evidential record, not a nuisance. Supports the argument that the literature-search and screening stages are where structured use matters most; grounds the stakes for the sociological reader.
+- Hallucinated citations as misconduct (Accountability in Research): citations function as data in social science disciplines, so AI-induced citation errors are direct contamination of the evidential record, not a nuisance. Supports the argument that the literature-search and screening stages are where structured use matters most; grounds the stakes for the social science reader.
 - "Authorship is accountability, not just participation" is already being used in the field (Scholarly Kitchen / Chronicle). The paper is not introducing this principle; it is specifying what it requires in practice — what artefacts, produced how, make the accountability claim substantive rather than nominal. The "Humanity Test" (can the author defend every claim, trace every source, explain every nuance without AI help?) is the criterion; the paper's contribution is that documented workflow artefacts provide the structural conditions under which the test can be substantively passed.
 - The field is already drifting toward tiered, task-specific disclosure frameworks. The paper's contribution is to specify *which axis* the tiering should be organised along — not task type (writing vs. analysis vs. search) but process structure (systematic vs. unsystematic).
-- This paper: (1) develops the distinction between systematic and unsystematic AI authorship; (2) introduces the concept of *query authorship* — the intellectual contribution embedded in well-formed queries, configurations, and workflow design; (3) describes a systematic workflow for sociology across the full research pipeline; (4) argues that systematic AI authorship instantiates the epistemic properties of open-science practices; (5) draws implications for journal policy.
+- This paper: (1) develops the distinction between systematic and unsystematic AI authorship; (2) introduces the concept of *query authorship* — the intellectual contribution embedded in well-formed queries, configurations, and workflow design; (3) describes a systematic workflow for the social sciences across the full research pipeline; (4) argues that systematic AI authorship instantiates the epistemic properties of open-science practices; (5) draws implications for journal policy.
 - The systematic approach is a spectrum — degrees of systematic. How to implement it is up to the author and their theoretical, methodological, and epistemic commitments. The unsystematic approach is *off* this spectrum, not at one end of it.
 - Frame: methodological contribution. The paper demonstrates a workflow and argues for its epistemic properties — it is not a think-piece. The specific workflow and folder structure described are an example; others should adopt something analogous.
 - **Self-demonstration, honestly stated**: this paper's own composition sits on the spectrum it describes — systematic in infrastructure (session logs, author-input files, reviewer skills, a documented literature search pipeline) and more hermeneutic in argument development. The systematic elements did genuine epistemic work; the conceptual moves developed during the writing not only from a pre-specified plan. A fuller treatment follows in §5.4. This acknowledgement is part of the argument: the framework's value is not contingent on pre-registered rigidity.
 
-**Scope limitation** (stated here, not batched): The workflow described is for text-heavy, literature-based, and quantitative, qualitative, and mixed social science research. Systematic reviews have their own established guidance; what is described here is appropriate for standard journal articles. Empirical data (both quantitative and qualitative) data collection and GDPR considerations require additional safeguards addressed in the supplementary materials. The argument is scoped to sociology and adjacent social sciences.
+**Scope limitation** (stated here, not batched): The workflow described is for text-heavy, literature-based, and quantitative, qualitative, and mixed social science research. Systematic reviews have their own established guidance; what is described here is appropriate for standard journal articles. Empirical data (both quantitative and qualitative) data collection and GDPR considerations require additional safeguards addressed in the supplementary materials. The argument is scoped to the social sciences.
 
 ---
 
@@ -69,10 +69,10 @@ The argument must be tool-agnostic throughout. The structured/unstructured disti
 
 - The checklist literature addresses accountability after the fact. It implicitly assumes the research process is already sound — it has nothing to say about whether it was. A researcher could complete every item on PRISMA-trAIce while having used AI in a wholly unstructured, unverifiable way.
 - No existing framework treats the **structured/unstructured distinction** as the fundamental policy-relevant axis.
-- No sociology-specific workflow framework exists. Davidson & Karell (2025) is the closest — but it is a special-issue framing piece, not a workflow guide. Blanchard et al. is the most practical pipeline, but in marketing.
+- No social-science-specific workflow framework exists. Davidson & Karell (2025) is the closest — but it is a special-issue framing piece, not a workflow guide. Blanchard et al. is the most practical pipeline, but in marketing.
 - No existing work treats AI tool configuration (skill files, configured reviewer roles, system-level prompts) as an epistemic mechanism comparable to pre-registration or researcher-degrees-of-freedom disclosure.
 - No existing work discusses transparency artefacts (prompt templates, search logs, skill configurations) as components of a replication package.
-- **Summary**: The field has checklists in abundance and structured process thinking almost nowhere. The most actionable pipeline works are in clinical research and ML/NLP. Social science equivalents are partial. Sociology-specific work is absent.
+- **Summary**: The field has checklists in abundance and structured process thinking almost nowhere. The most actionable pipeline works are in clinical research and ML/NLP. Social science equivalents are partial. Social-science-specific workflow work is absent.
 
 ---
 
@@ -99,7 +99,7 @@ The argument must be tool-agnostic throughout. The structured/unstructured disti
 ### 3.3 Why the distinction matters
 
 - Epistemically: systematic use makes errors visible and correctable; unsystematic use does not
-- Zeng et al. (2025, AIRepr): systematic prompting designed for reproducibility *also produces better results* — not just more transparent ones. This is not a trade-off. [Note: this finding comes from data science tasks; the claim for sociology is suggestive, not demonstrated — hedge accordingly in §5.3]
+- Zeng et al. (2025, AIRepr): systematic prompting designed for reproducibility *also produces better results* — not just more transparent ones. This is not a trade-off. [Note: this finding comes from data science tasks; the claim for social science is suggestive, not demonstrated — hedge accordingly in §5.3]
 - The existing literature has converged on reporting checklists (PRISMA-trAIce, TITAN, TRIPOD-LLM, etc.) — instruments for disclosing AI use after the fact. These assume the underlying process was sound. Systematic use addresses the prior question: building soundness in. [Concessive: checklists are valuable; they are just insufficient.]
 - The systematic/unsystematic axis is orthogonal to the use/non-use axis. A paper using AI in a systematic way may be more epistemically sound than one not using AI at all but relying on undocumented, unverifiable manual judgements.
 - The query authorship concept travels beyond the immediate AI context: it connects to existing debates about transparency in qualitative research (what counts as a decision? who made it?) and to the open-science argument for researcher degrees of freedom disclosure.
@@ -114,7 +114,7 @@ The argument must be tool-agnostic throughout. The structured/unstructured disti
 
 ---
 
-## 4. A systematic workflow for sociology
+## 4. A systematic workflow for social science
 
 **Function**: Shows what systematic AI authorship looks like in practice across the research pipeline. Descriptive — this is how it works, not why it is better (that comes in §5). Frame as a general workflow, not as a description of what this paper did. Details go to supplementary materials; text stays at the level of principle. No self-referential commentary.
 
@@ -124,7 +124,7 @@ The argument must be tool-agnostic throughout. The structured/unstructured disti
 - At each stage: explicit input criteria, configured AI tool, human verification checkpoint, documented output
 - Transparency artefacts produced at each stage: boolean search strings, screening rubrics, skill configurations, prompt templates, search logs, NotebookLM source sets, analysis scripts and outputs, codebooks, review records
 - Each stage can have their own level of systematic approach, their own configuration files etc. 
-- [Scope note here, briefly]: This is not an automated pipeline that delegates decisions to agents. Xu & Yang (2026) demonstrate that type — effective for scaling well-defined computational tasks. The workflow here keeps the researcher in the loop at every stage; AI handles execution within explicitly defined criteria, the researcher handles judgement. The distinction matters for sociology, where research questions, theoretical framings, and interpretive moves cannot be delegated.
+- [Scope note here, briefly]: This is not an automated pipeline that delegates decisions to agents. Xu & Yang (2026) demonstrate that type — effective for scaling well-defined computational tasks. The workflow here keeps the researcher in the loop at every stage; AI handles execution within explicitly defined criteria, the researcher handles judgement. The distinction matters for social science, where research questions, theoretical framings, and interpretive moves cannot be delegated.
 
 ### 4.2 Literature search and screening
 
@@ -179,7 +179,7 @@ The review stage has three components. They are cumulative — each addresses a 
 
 **Component 3 — Cross-model persona review.**
 
-- **Cross-model persona review as documented procedure**: a set of reviewer personas — for this project, six (Delacroix, theoretical sociologist; Philosopher of mind; Hartmann, applied microeconomist; Kowalski, political scientist; Norwegian AI committee; Developer) — run in fresh sessions across multiple models (Claude, ChatGPT, Gemini). Each persona's prompt is documented; outputs are saved as markdown. The persona prompts and synthesis file are part of the replication package. At the and, run a new persona only once using Claude (presumably best suited for this task); the obnoxious asshole reviewer. Then revise. 
+- **Cross-model persona review as documented procedure**: a set of reviewer personas — for this project, six (Delacroix, theoretical social scientist; Philosopher of mind; Hartmann, applied microeconomist; Kowalski, political scientist; Norwegian AI committee; Developer) — run in fresh sessions across multiple models (Claude, ChatGPT, Gemini). Each persona's prompt is documented; outputs are saved as markdown. The persona prompts and synthesis file are part of the replication package. At the and, run a new persona only once using Claude (presumably best suited for this task); the obnoxious asshole reviewer. Then revise. 
 - **Rationale**: adversarial configuration (Component 2) addresses sycophancy within one model. Cross-model review addresses a different problem: a single model may be systematically biased toward certain argumentative styles, theoretical traditions, or rhetorical conventions. Running the same persona prompts across models from different developers exploits variance in training regimes to identify critique that is robust across models. A concern raised by one model may reflect that model's tendencies; the same concern raised independently by two or more models is substantially more credible. Model divergence on the same question is also informative — it signals genuine argumentative ambiguity. This is the review-stage equivalent of a robustness check.
 - **Synthesis protocol**: act on any objection raised independently by two or more models; flag for judgement any objection raised by only one model; note model divergence as a signal of genuine ambiguity; disregard sycophantic positive feedback, use critical outputs only.
 - **Persona calibration as query authorship**: each persona encodes a specific epistemic position structurally likely to resist the paper's argument from a direction the author cannot fully anticipate. The prompt design is the intellectual work; the model's output is execution within those constraints. This is distinct from asking "what are the weaknesses of this paper?" — a generic question that produces generic feedback.
@@ -224,8 +224,8 @@ The review stage has three components. They are cumulative — each addresses a 
 ### 5.3 The reliability finding — and its limits
 
 - Zeng et al. (2025): reproducibility correlates with accuracy across 1,032 tasks — the discipline of structured prompting improves outputs, not just transparency. This is suggestive: structured use is not merely a transparency requirement but a mechanism for quality.
-- **Scope limitation (stated here)**: The Zeng et al. finding comes from data science tasks; the paper cannot claim to have demonstrated the same for sociology research. The claim is that the logic is plausible and the adjacent evidence is consistent with it. This should be framed as "I suggest" rather than "I argue" — a hypothesis for future empirical validation, analogous to how Zeng et al. (2025) tested this formally in their domain.
-- What this section can claim without overreach: structured use is a necessary condition for the kind of quality control that makes errors detectable; whether it also improves average output quality in sociology is an open empirical question.
+- **Scope limitation (stated here)**: The Zeng et al. finding comes from data science tasks; the paper cannot claim to have demonstrated the same for social science research. The claim is that the logic is plausible and the adjacent evidence is consistent with it. This should be framed as "I suggest" rather than "I argue" — a hypothesis for future empirical validation, analogous to how Zeng et al. (2025) tested this formally in their domain.
+- What this section can claim without overreach: structured use is a necessary condition for the kind of quality control that makes errors detectable; whether it also improves average output quality in social science research is an open empirical question.
 
 ### 5.4 What structured use cannot guarantee
 
@@ -366,7 +366,7 @@ The package must include the actual files used, not illustrative examples:
 
 - [see notes-explicit-reasoning.md]
 - Nosek et al. (2015, *Science*) — open science
-- Freese & Peterson (2017, ARS) — replication in sociology
+- Freese & Peterson (2017, ARS) — replication in social science
 
 **Journal policy:**
 
